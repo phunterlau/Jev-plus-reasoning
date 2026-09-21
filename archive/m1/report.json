@@ -1,0 +1,4559 @@
+{
+  "source_runs": [
+    "m0-baseline-v1",
+    "m1-validation-v1",
+    "m1-pilot-v1"
+  ],
+  "summary": {
+    "pilot/A/all": {
+      "n": 400,
+      "accuracy": 0.335,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16729088639200998,
+      "nll": 5.979217370903107,
+      "brier_sum": 1.3234051885115405,
+      "ece_10_equal_bins": 0.6628760477900505,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03326439050033514,
+      "latency_p95_seconds": 0.045770275148606744,
+      "examples_per_second": 29.09961352399656,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 400,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/deep": {
+      "n": 133,
+      "accuracy": 0.5037593984962406,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22333333333333336,
+      "nll": 4.79091553533904,
+      "brier_sum": 0.9912997066108539,
+      "ece_10_equal_bins": 0.4956234662156356,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03393441799926222,
+      "latency_p95_seconds": 0.04591239820001647,
+      "examples_per_second": 28.36513623552164,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/shallow": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.61685053215453,
+      "brier_sum": 0.9836803034983168,
+      "ece_10_equal_bins": 0.4911418405931387,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.0330623400004697,
+      "latency_p95_seconds": 0.04221633879897123,
+      "examples_per_second": 29.638981955836535,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/unknown": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.430556216592139,
+      "brier_sum": 1.9831352445265473,
+      "ece_10_equal_bins": 0.995486308757524,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.032498077998752706,
+      "latency_p95_seconds": 0.04553988359912182,
+      "examples_per_second": 29.493290441663422,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/depth_0": {
+      "n": 34,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.761035678640379,
+      "brier_sum": 0.998214555419411,
+      "ece_10_equal_bins": 0.49772836004986487,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03280008299952897,
+      "latency_p95_seconds": 0.03926507089981895,
+      "examples_per_second": 29.78462048897184,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 34,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/depth_1": {
+      "n": 33,
+      "accuracy": 0.5151515151515151,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22666666666666668,
+      "nll": 4.4682961388054725,
+      "brier_sum": 0.9687056197008261,
+      "ece_10_equal_bins": 0.484355729637724,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03311097999903723,
+      "latency_p95_seconds": 0.039556855199043624,
+      "examples_per_second": 29.49041232397172,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 33,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/depth_2": {
+      "n": 67,
+      "accuracy": 0.4925373134328358,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22,
+      "nll": 4.834361488060344,
+      "brier_sum": 1.012770844312759,
+      "ece_10_equal_bins": 0.5063629212664135,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.033209082001121715,
+      "latency_p95_seconds": 0.04429412729878095,
+      "examples_per_second": 29.296076096174417,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261597184,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/depth_3": {
+      "n": 66,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.890463776474057,
+      "brier_sum": 0.9989535364669951,
+      "ece_10_equal_bins": 0.4994528284578612,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.033515558499857434,
+      "latency_p95_seconds": 0.04613391174825665,
+      "examples_per_second": 28.552054642574095,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 66,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/depth_5": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.692853088847828,
+      "brier_sum": 0.9837601130212227,
+      "ece_10_equal_bins": 0.4918512586337417,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03430128300169599,
+      "latency_p95_seconds": 0.045857318299385955,
+      "examples_per_second": 28.18338515819875,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261079040,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/class_True": {
+      "n": 134,
+      "accuracy": 1.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "nll": 0.00047035439402391574,
+      "brier_sum": 2.7021073121905545e-05,
+      "ece_10_equal_bins": 0.00046327710151672363,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.033616271499340655,
+      "latency_p95_seconds": 0.04550563290122227,
+      "examples_per_second": 29.065693786848495,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261597184,
+      "prediction_counts": {
+        "True": 134,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/class_False": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 9.5515785268097,
+      "brier_sum": 1.997003511720205,
+      "ece_10_equal_bins": 0.9985926254351336,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03349980499842786,
+      "latency_p95_seconds": 0.04572642140192329,
+      "examples_per_second": 28.749665715442394,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.430556216592139,
+      "brier_sum": 1.9831352445265473,
+      "ece_10_equal_bins": 0.995486308757524,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.032498077998752706,
+      "latency_p95_seconds": 0.04553988359912182,
+      "examples_per_second": 29.493290441663422,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.3394495412844037,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16894977168949774,
+      "nll": 5.7365349750126065,
+      "brier_sum": 1.3139459476647306,
+      "ece_10_equal_bins": 0.6584529543141707,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03199603000030038,
+      "latency_p95_seconds": 0.03383811559979222,
+      "examples_per_second": 30.970639618410374,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1247198720,
+      "prediction_counts": {
+        "True": 109,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 5.363294532670161,
+      "brier_sum": 1.3170302530719902,
+      "ece_10_equal_bins": 0.6618108406211392,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03211781299978611,
+      "latency_p95_seconds": 0.034142685999904644,
+      "examples_per_second": 30.9875912962144,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1247951360,
+      "prediction_counts": {
+        "True": 99,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.472476374116012,
+      "brier_sum": 1.332342595340234,
+      "ece_10_equal_bins": 0.6658801740656297,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03546802449818642,
+      "latency_p95_seconds": 0.04638409049857728,
+      "examples_per_second": 26.681859784758075,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.396674431618602,
+      "brier_sum": 1.3317821135663666,
+      "ece_10_equal_bins": 0.6659924704581499,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.0350142989991582,
+      "latency_p95_seconds": 0.04542699024932517,
+      "examples_per_second": 27.95860778337756,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260301824,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/all": {
+      "n": 400,
+      "accuracy": 0.3375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.17257987734871608,
+      "nll": 5.463530407644753,
+      "brier_sum": 1.3095193281071895,
+      "ece_10_equal_bins": 0.6582301145792008,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03269174650085915,
+      "latency_p95_seconds": 0.03711392345103372,
+      "examples_per_second": 29.78908265191829,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 399,
+        "False": 0,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/deep": {
+      "n": 133,
+      "accuracy": 0.5037593984962406,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22333333333333336,
+      "nll": 4.035691264157492,
+      "brier_sum": 0.9896913361238794,
+      "ece_10_equal_bins": 0.49498611867875975,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03380326799742761,
+      "latency_p95_seconds": 0.04438271399922086,
+      "examples_per_second": 29.112743188213972,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/shallow": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 3.8515290553967994,
+      "brier_sum": 0.9804942537771836,
+      "ece_10_equal_bins": 0.4899194854408947,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03259172099933494,
+      "latency_p95_seconds": 0.03621930079898447,
+      "examples_per_second": 30.295084728597995,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259395584,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/unknown": {
+      "n": 133,
+      "accuracy": 0.007518796992481203,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.004975124378109453,
+      "nll": 8.41822816319845,
+      "brier_sum": 1.9476485902457819,
+      "ece_10_equal_bins": 0.984372631947797,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.0321097500018368,
+      "latency_p95_seconds": 0.03660977340041427,
+      "examples_per_second": 30.21034311180211,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 132,
+        "False": 0,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/depth_0": {
+      "n": 34,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.03615751591467,
+      "brier_sum": 0.99373168178339,
+      "ece_10_equal_bins": 0.49606962063733273,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03238567449989205,
+      "latency_p95_seconds": 0.03648750554930302,
+      "examples_per_second": 30.36622878533344,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1258229248,
+      "prediction_counts": {
+        "True": 34,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/depth_1": {
+      "n": 33,
+      "accuracy": 0.5151515151515151,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22666666666666668,
+      "nll": 3.661305793045054,
+      "brier_sum": 0.9668556915889713,
+      "ece_10_equal_bins": 0.48358298251123144,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03284320099919569,
+      "latency_p95_seconds": 0.03551586900066468,
+      "examples_per_second": 30.222132619857955,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259395584,
+      "prediction_counts": {
+        "True": 33,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/depth_2": {
+      "n": 67,
+      "accuracy": 0.4925373134328358,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22,
+      "nll": 4.044603470268258,
+      "brier_sum": 1.0066926273528298,
+      "ece_10_equal_bins": 0.5031750219971386,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03281584399883286,
+      "latency_p95_seconds": 0.03861129740071191,
+      "examples_per_second": 29.84082382588445,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259654656,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/depth_3": {
+      "n": 66,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.099483634841889,
+      "brier_sum": 0.9965140418855385,
+      "ece_10_equal_bins": 0.49831717212994897,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03277600899855315,
+      "latency_p95_seconds": 0.044310750998192816,
+      "examples_per_second": 29.40748565463354,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 66,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/depth_5": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 3.972851018408687,
+      "brier_sum": 0.9829704617914988,
+      "ece_10_equal_bins": 0.4917047824432601,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03425377000166918,
+      "latency_p95_seconds": 0.04244453670034998,
+      "examples_per_second": 28.828120003580725,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259136512,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/class_True": {
+      "n": 134,
+      "accuracy": 1.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "nll": 0.0004474709701306806,
+      "brier_sum": 5.661997006957233e-06,
+      "ece_10_equal_bins": 0.0004459196951851485,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.032829153000420774,
+      "latency_p95_seconds": 0.03904835649973389,
+      "examples_per_second": 29.696437657842747,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259654656,
+      "prediction_counts": {
+        "True": 134,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/class_False": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.01299140031961,
+      "brier_sum": 1.9907496994931426,
+      "ece_10_equal_bins": 0.995716082870512,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.033108176998212,
+      "latency_p95_seconds": 0.04132791839947454,
+      "examples_per_second": 29.47076726749411,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.007518796992481203,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.004975124378109453,
+      "nll": 8.41822816319845,
+      "brier_sum": 1.9476485902457819,
+      "ece_10_equal_bins": 0.984372631947797,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.0321097500018368,
+      "latency_p95_seconds": 0.03660977340041427,
+      "examples_per_second": 30.21034311180211,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 132,
+        "False": 0,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.3394495412844037,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16894977168949774,
+      "nll": 5.197019002950073,
+      "brier_sum": 1.3038090433486713,
+      "ece_10_equal_bins": 0.6551223588646006,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.031864912998571526,
+      "latency_p95_seconds": 0.03360064119842718,
+      "examples_per_second": 31.130173180558995,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1245372928,
+      "prediction_counts": {
+        "True": 109,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.3434343434343434,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.1875467744349648,
+      "nll": 4.620227842235111,
+      "brier_sum": 1.2781816443258034,
+      "ece_10_equal_bins": 0.6491244898902045,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.031524838999757776,
+      "latency_p95_seconds": 0.034099048398275045,
+      "examples_per_second": 31.244458990427866,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1246100992,
+      "prediction_counts": {
+        "True": 98,
+        "False": 0,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.048014822021606,
+      "brier_sum": 1.3302711425464333,
+      "ece_10_equal_bins": 0.6655319531758626,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03517851299875474,
+      "latency_p95_seconds": 0.04577930400046171,
+      "examples_per_second": 27.823229373715893,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/A-ref/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.051303254593651,
+      "brier_sum": 1.3275680525537341,
+      "ece_10_equal_bins": 0.6638470490773518,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03475686149977264,
+      "latency_p95_seconds": 0.03678943174872984,
+      "examples_per_second": 29.025857149042743,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1258359296,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/all": {
+      "n": 400,
+      "accuracy": 0.335,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16729088639200998,
+      "nll": 5.979217370903107,
+      "brier_sum": 1.3234051885115405,
+      "ece_10_equal_bins": 0.6628760477900505,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03338992200042412,
+      "latency_p95_seconds": 0.04532083710128063,
+      "examples_per_second": 29.02934200500845,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 400,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/deep": {
+      "n": 133,
+      "accuracy": 0.5037593984962406,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22333333333333336,
+      "nll": 4.79091553533904,
+      "brier_sum": 0.9912997066108539,
+      "ece_10_equal_bins": 0.4956234662156356,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03427158599879476,
+      "latency_p95_seconds": 0.04586065700059407,
+      "examples_per_second": 28.338074137174164,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/shallow": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.61685053215453,
+      "brier_sum": 0.9836803034983168,
+      "ece_10_equal_bins": 0.4911418405931387,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03311221599869896,
+      "latency_p95_seconds": 0.041702580501805614,
+      "examples_per_second": 29.567792675764757,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/unknown": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.430556216592139,
+      "brier_sum": 1.9831352445265473,
+      "ece_10_equal_bins": 0.995486308757524,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03254653299882193,
+      "latency_p95_seconds": 0.04494048560081865,
+      "examples_per_second": 29.455036218875627,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/depth_0": {
+      "n": 34,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.761035678640379,
+      "brier_sum": 0.998214555419411,
+      "ece_10_equal_bins": 0.49772836004986487,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03274942350071797,
+      "latency_p95_seconds": 0.03927823759895544,
+      "examples_per_second": 29.729177345734808,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 34,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/depth_1": {
+      "n": 33,
+      "accuracy": 0.5151515151515151,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22666666666666668,
+      "nll": 4.4682961388054725,
+      "brier_sum": 0.9687056197008261,
+      "ece_10_equal_bins": 0.484355729637724,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03327835699747084,
+      "latency_p95_seconds": 0.039150397402408985,
+      "examples_per_second": 29.403339967793745,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 33,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/depth_2": {
+      "n": 67,
+      "accuracy": 0.4925373134328358,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22,
+      "nll": 4.834361488060344,
+      "brier_sum": 1.012770844312759,
+      "ece_10_equal_bins": 0.5063629212664135,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03350190699711675,
+      "latency_p95_seconds": 0.04450387590077298,
+      "examples_per_second": 29.073633990387442,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261597184,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/depth_3": {
+      "n": 66,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.890463776474057,
+      "brier_sum": 0.9989535364669951,
+      "ece_10_equal_bins": 0.4994528284578612,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03373882300002151,
+      "latency_p95_seconds": 0.04591483600142965,
+      "examples_per_second": 28.577027132575854,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 66,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/depth_5": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.692853088847828,
+      "brier_sum": 0.9837601130212227,
+      "ece_10_equal_bins": 0.4918512586337417,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03452774800098268,
+      "latency_p95_seconds": 0.04560815769909823,
+      "examples_per_second": 28.106562779104983,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261079040,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/class_True": {
+      "n": 134,
+      "accuracy": 1.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "nll": 0.00047035439402391574,
+      "brier_sum": 2.7021073121905545e-05,
+      "ece_10_equal_bins": 0.00046327710151672363,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03372758099976636,
+      "latency_p95_seconds": 0.0454112602988971,
+      "examples_per_second": 29.0000971306474,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261597184,
+      "prediction_counts": {
+        "True": 134,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/class_False": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 9.5515785268097,
+      "brier_sum": 1.997003511720205,
+      "ece_10_equal_bins": 0.9985926254351336,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03375198499998078,
+      "latency_p95_seconds": 0.04533759560290491,
+      "examples_per_second": 28.64446586112504,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.430556216592139,
+      "brier_sum": 1.9831352445265473,
+      "ece_10_equal_bins": 0.995486308757524,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03254653299882193,
+      "latency_p95_seconds": 0.04494048560081865,
+      "examples_per_second": 29.455036218875627,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.3394495412844037,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16894977168949774,
+      "nll": 5.7365349750126065,
+      "brier_sum": 1.3139459476647306,
+      "ece_10_equal_bins": 0.6584529543141707,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.032068808999611065,
+      "latency_p95_seconds": 0.034140463398944124,
+      "examples_per_second": 30.874397368392877,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1247198720,
+      "prediction_counts": {
+        "True": 109,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 5.363294532670161,
+      "brier_sum": 1.3170302530719902,
+      "ece_10_equal_bins": 0.6618108406211392,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03224253600274096,
+      "latency_p95_seconds": 0.03453592939913506,
+      "examples_per_second": 30.812010115915125,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1247951360,
+      "prediction_counts": {
+        "True": 99,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.472476374116012,
+      "brier_sum": 1.332342595340234,
+      "ece_10_equal_bins": 0.6658801740656297,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.0356505619984091,
+      "latency_p95_seconds": 0.046599738999248075,
+      "examples_per_second": 26.71889246787323,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262115328,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/B/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.396674431618602,
+      "brier_sum": 1.3317821135663666,
+      "ece_10_equal_bins": 0.6659924704581499,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03514778099997784,
+      "latency_p95_seconds": 0.045314987750316504,
+      "examples_per_second": 27.884827938691068,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260301824,
+      "prediction_counts": {
+        "True": 96,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/C128/all": {
+      "n": 400,
+      "accuracy": 0.3675,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2947496812788075,
+      "nll": 2.142619387100902,
+      "brier_sum": 0.9464278461687887,
+      "ece_10_equal_bins": 0.414892914891243,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.579571542002668,
+      "latency_p95_seconds": 3.647423357351363,
+      "examples_per_second": 0.2796454129382744,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 218,
+        "False": 6,
+        "Unknown": 176,
+        "null": 0
+      }
+    },
+    "pilot/C128/deep": {
+      "n": 133,
+      "accuracy": 0.3082706766917293,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19523809523809524,
+      "nll": 2.493996305712565,
+      "brier_sum": 1.018635425519629,
+      "ece_10_equal_bins": 0.44647952533306035,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.581874504001462,
+      "latency_p95_seconds": 3.6605016930014243,
+      "examples_per_second": 0.2792029001365423,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 73,
+        "False": 2,
+        "Unknown": 58,
+        "null": 0
+      }
+    },
+    "pilot/C128/shallow": {
+      "n": 67,
+      "accuracy": 0.34328358208955223,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.21296296296296294,
+      "nll": 2.319935493634524,
+      "brier_sum": 1.0071168187600337,
+      "ece_10_equal_bins": 0.4693064769702171,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5654475150004146,
+      "latency_p95_seconds": 3.651070340200749,
+      "examples_per_second": 0.2799429229907941,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 38,
+        "False": 2,
+        "Unknown": 27,
+        "null": 0
+      }
+    },
+    "pilot/C128/unknown": {
+      "n": 133,
+      "accuracy": 0.46616541353383456,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.21196581196581196,
+      "nll": 1.4568131666394064,
+      "brier_sum": 0.795713411301855,
+      "ece_10_equal_bins": 0.36303427837845076,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5805872849996376,
+      "latency_p95_seconds": 3.6502914289980253,
+      "examples_per_second": 0.2796640916166878,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 70,
+        "False": 1,
+        "Unknown": 62,
+        "null": 0
+      }
+    },
+    "pilot/C128/depth_0": {
+      "n": 34,
+      "accuracy": 0.3235294117647059,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.20370370370370372,
+      "nll": 2.3537113305090065,
+      "brier_sum": 1.0154001323551736,
+      "ece_10_equal_bins": 0.4805404403630425,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5782252230019367,
+      "latency_p95_seconds": 3.6248180350507027,
+      "examples_per_second": 0.279921292791948,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 19,
+        "False": 1,
+        "Unknown": 14,
+        "null": 0
+      }
+    },
+    "pilot/C128/depth_1": {
+      "n": 33,
+      "accuracy": 0.36363636363636365,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 2.285136146551723,
+      "brier_sum": 0.9985824956620105,
+      "ece_10_equal_bins": 0.4577320904442758,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5551077050004096,
+      "latency_p95_seconds": 3.6872949342010544,
+      "examples_per_second": 0.2799652121468077,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 19,
+        "False": 1,
+        "Unknown": 13,
+        "null": 0
+      }
+    },
+    "pilot/C128/depth_2": {
+      "n": 67,
+      "accuracy": 0.31343283582089554,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19999999999999998,
+      "nll": 2.629170402149779,
+      "brier_sum": 1.0415808404975437,
+      "ece_10_equal_bins": 0.4612336737006458,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5761776260005718,
+      "latency_p95_seconds": 3.613175284301178,
+      "examples_per_second": 0.2801920224755303,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 37,
+        "False": 1,
+        "Unknown": 29,
+        "null": 0
+      }
+    },
+    "pilot/C128/depth_3": {
+      "n": 66,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.20657276995305163,
+      "nll": 2.40516225134151,
+      "brier_sum": 0.97907881761398,
+      "ece_10_equal_bins": 0.42150262133641675,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.579342684000949,
+      "latency_p95_seconds": 3.671464832500533,
+      "examples_per_second": 0.27919384665312796,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 38,
+        "False": 1,
+        "Unknown": 27,
+        "null": 0
+      }
+    },
+    "pilot/C128/depth_5": {
+      "n": 67,
+      "accuracy": 0.2835820895522388,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.18357487922705315,
+      "nll": 2.5815044786750976,
+      "brier_sum": 1.057601636292358,
+      "ece_10_equal_bins": 0.47108363971781375,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5870135669974843,
+      "latency_p95_seconds": 3.64643592630091,
+      "examples_per_second": 0.27921181906743575,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 35,
+        "False": 1,
+        "Unknown": 31,
+        "null": 0
+      }
+    },
+    "pilot/C128/class_True": {
+      "n": 134,
+      "accuracy": 0.6343283582089553,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.258751902587519,
+      "nll": 0.7081953796068097,
+      "brier_sum": 0.4832312648056096,
+      "ece_10_equal_bins": 0.16163291570855615,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.575841916501304,
+      "latency_p95_seconds": 3.6374220713001706,
+      "examples_per_second": 0.2798154548062195,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 85,
+        "False": 5,
+        "Unknown": 44,
+        "null": 0
+      }
+    },
+    "pilot/C128/class_False": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 4.273634757969976,
+      "brier_sum": 1.5638215434617797,
+      "ece_10_equal_bins": 0.760711362711469,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5813048080017325,
+      "latency_p95_seconds": 3.6480325982003707,
+      "examples_per_second": 0.27945564809949325,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 63,
+        "False": 0,
+        "Unknown": 70,
+        "null": 0
+      }
+    },
+    "pilot/C128/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.46616541353383456,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.21196581196581196,
+      "nll": 1.4568131666394064,
+      "brier_sum": 0.795713411301855,
+      "ece_10_equal_bins": 0.36303427837845076,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5805872849996376,
+      "latency_p95_seconds": 3.6502914289980253,
+      "examples_per_second": 0.2796640916166878,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 70,
+        "False": 1,
+        "Unknown": 62,
+        "null": 0
+      }
+    },
+    "pilot/C128/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.3394495412844037,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2705254005713576,
+      "nll": 2.39765982834413,
+      "brier_sum": 1.0236500200459295,
+      "ece_10_equal_bins": 0.4410410479668084,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.584662147997733,
+      "latency_p95_seconds": 3.6932579963984606,
+      "examples_per_second": 0.2784633231885384,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265096192,
+      "prediction_counts": {
+        "True": 60,
+        "False": 2,
+        "Unknown": 47,
+        "null": 0
+      }
+    },
+    "pilot/C128/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.40404040404040403,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3254499479399078,
+      "nll": 1.8933808284420124,
+      "brier_sum": 0.8506727424934859,
+      "ece_10_equal_bins": 0.39687226486928534,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.561072319000232,
+      "latency_p95_seconds": 3.6322631830975296,
+      "examples_per_second": 0.280323456162084,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265873408,
+      "prediction_counts": {
+        "True": 48,
+        "False": 1,
+        "Unknown": 50,
+        "null": 0
+      }
+    },
+    "pilot/C128/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.2916666666666667,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.23359830418653948,
+      "nll": 2.163007804899315,
+      "brier_sum": 1.024390904732726,
+      "ece_10_equal_bins": 0.48705410305410624,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5562812205025693,
+      "latency_p95_seconds": 3.615474760750658,
+      "examples_per_second": 0.28032786784794783,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 53,
+        "False": 1,
+        "Unknown": 42,
+        "null": 0
+      }
+    },
+    "pilot/C128/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.4375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3515171253324649,
+      "nll": 2.089681065257885,
+      "brier_sum": 0.8795328950136659,
+      "ece_10_equal_bins": 0.3542230520397425,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5854142280004453,
+      "latency_p95_seconds": 3.638682046750546,
+      "examples_per_second": 0.27961494395096403,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 57,
+        "False": 2,
+        "Unknown": 37,
+        "null": 0
+      }
+    },
+    "pilot/C32/all": {
+      "n": 400,
+      "accuracy": 0.3725,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3453599621666849,
+      "nll": 1.856872066875669,
+      "brier_sum": 0.890943133765407,
+      "ece_10_equal_bins": 0.34279949828982353,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9165425604987831,
+      "latency_p95_seconds": 0.9415494482505892,
+      "examples_per_second": 1.0899572071889545,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 223,
+        "False": 65,
+        "Unknown": 112,
+        "null": 0
+      }
+    },
+    "pilot/C32/deep": {
+      "n": 133,
+      "accuracy": 0.38345864661654133,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.24174115818111155,
+      "nll": 2.1303831960191077,
+      "brier_sum": 0.9150158829396154,
+      "ece_10_equal_bins": 0.3544321488168903,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9165381359998719,
+      "latency_p95_seconds": 0.9432085268010268,
+      "examples_per_second": 1.0891070229779334,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 88,
+        "False": 17,
+        "Unknown": 28,
+        "null": 0
+      }
+    },
+    "pilot/C32/shallow": {
+      "n": 67,
+      "accuracy": 0.3283582089552239,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2572043010752688,
+      "nll": 1.9433023279020676,
+      "brier_sum": 0.9225766049217071,
+      "ece_10_equal_bins": 0.39705031087149434,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9149021230005019,
+      "latency_p95_seconds": 0.941766158199971,
+      "examples_per_second": 1.09147747740544,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265484288,
+      "prediction_counts": {
+        "True": 28,
+        "False": 17,
+        "Unknown": 22,
+        "null": 0
+      }
+    },
+    "pilot/C32/unknown": {
+      "n": 133,
+      "accuracy": 0.3533834586466165,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.17407407407407408,
+      "nll": 1.5761799586573688,
+      "brier_sum": 0.87839560044036,
+      "ece_10_equal_bins": 0.3713888985321934,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9166364270022314,
+      "latency_p95_seconds": 0.9391764483989391,
+      "examples_per_second": 1.0902664448877488,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 65,
+        "False": 21,
+        "Unknown": 47,
+        "null": 0
+      }
+    },
+    "pilot/C32/depth_0": {
+      "n": 34,
+      "accuracy": 0.2647058823529412,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.20833333333333334,
+      "nll": 2.1089791172539387,
+      "brier_sum": 1.0042843019472827,
+      "ece_10_equal_bins": 0.506588331916753,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9148540565001895,
+      "latency_p95_seconds": 0.9353768307009886,
+      "examples_per_second": 1.0931152319233706,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1264317952,
+      "prediction_counts": {
+        "True": 15,
+        "False": 7,
+        "Unknown": 12,
+        "null": 0
+      }
+    },
+    "pilot/C32/depth_1": {
+      "n": 33,
+      "accuracy": 0.3939393939393939,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.305982905982906,
+      "nll": 1.7726050297819567,
+      "brier_sum": 0.8383929170771747,
+      "ece_10_equal_bins": 0.3127618775223241,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9159269230003702,
+      "latency_p95_seconds": 0.9433279145981942,
+      "examples_per_second": 1.0897952188890445,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265484288,
+      "prediction_counts": {
+        "True": 13,
+        "False": 10,
+        "Unknown": 10,
+        "null": 0
+      }
+    },
+    "pilot/C32/depth_2": {
+      "n": 67,
+      "accuracy": 0.43283582089552236,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2828282828282828,
+      "nll": 1.7846965852068348,
+      "brier_sum": 0.8364312490577898,
+      "ece_10_equal_bins": 0.27479726654380116,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9178786730008142,
+      "latency_p95_seconds": 0.9398952039005962,
+      "examples_per_second": 1.0895145450920514,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265743360,
+      "prediction_counts": {
+        "True": 42,
+        "False": 10,
+        "Unknown": 15,
+        "null": 0
+      }
+    },
+    "pilot/C32/depth_3": {
+      "n": 66,
+      "accuracy": 0.36363636363636365,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.20921052631578943,
+      "nll": 2.109113084962056,
+      "brier_sum": 0.929104222153499,
+      "ece_10_equal_bins": 0.39327966308954987,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9158070250014134,
+      "latency_p95_seconds": 0.9441201722493133,
+      "examples_per_second": 1.090700289300681,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 47,
+        "False": 5,
+        "Unknown": 14,
+        "null": 0
+      }
+    },
+    "pilot/C32/depth_5": {
+      "n": 67,
+      "accuracy": 0.40298507462686567,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2696296296296296,
+      "nll": 2.1513358427320237,
+      "brier_sum": 0.9011378174453417,
+      "ece_10_equal_bins": 0.31616444819009126,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9178551609984424,
+      "latency_p95_seconds": 0.9394429146002948,
+      "examples_per_second": 1.0875420813196641,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265225216,
+      "prediction_counts": {
+        "True": 41,
+        "False": 12,
+        "Unknown": 14,
+        "null": 0
+      }
+    },
+    "pilot/C32/class_True": {
+      "n": 134,
+      "accuracy": 0.6268656716417911,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25688073394495414,
+      "nll": 0.8960526861494476,
+      "brier_sum": 0.5263746414939915,
+      "ece_10_equal_bins": 0.16075612337731604,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9159650605015486,
+      "latency_p95_seconds": 0.9440620261484582,
+      "examples_per_second": 1.0895040925173063,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1265743360,
+      "prediction_counts": {
+        "True": 84,
+        "False": 26,
+        "Unknown": 24,
+        "null": 0
+      }
+    },
+    "pilot/C32/class_False": {
+      "n": 133,
+      "accuracy": 0.13533834586466165,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.07947019867549669,
+      "nll": 3.105607761690315,
+      "brier_sum": 1.2708002758451151,
+      "ece_10_equal_bins": 0.5435781595402194,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9168022659978305,
+      "latency_p95_seconds": 0.9414319264004007,
+      "examples_per_second": 1.0901047885927337,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 74,
+        "False": 18,
+        "Unknown": 41,
+        "null": 0
+      }
+    },
+    "pilot/C32/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.3533834586466165,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.17407407407407408,
+      "nll": 1.5761799586573688,
+      "brier_sum": 0.87839560044036,
+      "ece_10_equal_bins": 0.3713888985321934,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9166364270022314,
+      "latency_p95_seconds": 0.9391764483989391,
+      "examples_per_second": 1.0902664448877488,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 65,
+        "False": 21,
+        "Unknown": 47,
+        "null": 0
+      }
+    },
+    "pilot/C32/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.3944954128440367,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3940498288814545,
+      "nll": 1.7475208080821594,
+      "brier_sum": 0.8749501471422351,
+      "ece_10_equal_bins": 0.34512858407213054,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9160362229995371,
+      "latency_p95_seconds": 0.9362360859995533,
+      "examples_per_second": 1.0906844099422188,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1251356160,
+      "prediction_counts": {
+        "True": 42,
+        "False": 32,
+        "Unknown": 35,
+        "null": 0
+      }
+    },
+    "pilot/C32/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.29292929292929293,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2900642031076814,
+      "nll": 2.3225127966256522,
+      "brier_sum": 1.0639384738061946,
+      "ece_10_equal_bins": 0.4445321930177284,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9139035389998753,
+      "latency_p95_seconds": 0.9359692234989779,
+      "examples_per_second": 1.095543588253727,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1252182528,
+      "prediction_counts": {
+        "True": 33,
+        "False": 30,
+        "Unknown": 36,
+        "null": 0
+      }
+    },
+    "pilot/C32/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.3958333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.30104463437796775,
+      "nll": 1.6975787122778796,
+      "brier_sum": 0.8344192802853985,
+      "ece_10_equal_bins": 0.3024747471014658,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9181492549996619,
+      "latency_p95_seconds": 0.9445048355009931,
+      "examples_per_second": 1.0868025702856197,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266261504,
+      "prediction_counts": {
+        "True": 76,
+        "False": 0,
+        "Unknown": 20,
+        "null": 0
+      }
+    },
+    "pilot/C32/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.40625,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.32462160481028407,
+      "nll": 1.6601326606739188,
+      "brier_sum": 0.7872242463900824,
+      "ece_10_equal_bins": 0.283487260962526,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9182248315009929,
+      "latency_p95_seconds": 0.9416607232506067,
+      "examples_per_second": 1.0865748230621526,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1264446976,
+      "prediction_counts": {
+        "True": 72,
+        "False": 3,
+        "Unknown": 21,
+        "null": 0
+      }
+    },
+    "pilot/C512/all": {
+      "n": 400,
+      "accuracy": 0.525,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.4988505747126437,
+      "nll": 2.366026650159944,
+      "brier_sum": 0.7640300885240058,
+      "ece_10_equal_bins": 0.3326709471642971,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.075210575500023,
+      "latency_p95_seconds": 14.453563380800187,
+      "examples_per_second": 0.0752432452339976,
+      "mean_reasoning_tokens": 479.48,
+      "natural_close_fraction": 0.255,
+      "forced_close_fraction": 0.745,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 206,
+        "False": 37,
+        "Unknown": 157,
+        "null": 0
+      }
+    },
+    "pilot/C512/deep": {
+      "n": 133,
+      "accuracy": 0.41353383458646614,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.29579886455798865,
+      "nll": 3.0824438660664053,
+      "brier_sum": 0.9760918302441633,
+      "ece_10_equal_bins": 0.4258155975126682,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.144669329998578,
+      "latency_p95_seconds": 14.480678121802338,
+      "examples_per_second": 0.07232227252727742,
+      "mean_reasoning_tokens": 499.09022556390977,
+      "natural_close_fraction": 0.10526315789473684,
+      "forced_close_fraction": 0.8947368421052632,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 70,
+        "False": 9,
+        "Unknown": 54,
+        "null": 0
+      }
+    },
+    "pilot/C512/shallow": {
+      "n": 67,
+      "accuracy": 0.7164179104477612,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.5158902130733116,
+      "nll": 1.3876317044871282,
+      "brier_sum": 0.4669106425869097,
+      "ece_10_equal_bins": 0.20042454039872581,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 13.699243912000384,
+      "latency_p95_seconds": 14.349837610900794,
+      "examples_per_second": 0.08287931548939219,
+      "mean_reasoning_tokens": 434.5223880597015,
+      "natural_close_fraction": 0.5074626865671642,
+      "forced_close_fraction": 0.4925373134328358,
+      "max_peak_allocated_bytes": 1333829120,
+      "prediction_counts": {
+        "True": 37,
+        "False": 19,
+        "Unknown": 11,
+        "null": 0
+      }
+    },
+    "pilot/C512/unknown": {
+      "n": 133,
+      "accuracy": 0.5413533834586466,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.23414634146341462,
+      "nll": 1.9842876203846311,
+      "brier_sum": 0.6745758239646527,
+      "ece_10_equal_bins": 0.31081389350102356,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.059260294001433,
+      "latency_p95_seconds": 14.42983564199967,
+      "examples_per_second": 0.07633709850287734,
+      "mean_reasoning_tokens": 472.6766917293233,
+      "natural_close_fraction": 0.3157894736842105,
+      "forced_close_fraction": 0.6842105263157895,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 59,
+        "False": 2,
+        "Unknown": 72,
+        "null": 0
+      }
+    },
+    "pilot/C512/depth_0": {
+      "n": 34,
+      "accuracy": 0.8529411764705882,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.5851851851851851,
+      "nll": 1.0621184194664182,
+      "brier_sum": 0.2808212877118417,
+      "ece_10_equal_bins": 0.13570440166136802,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 11.118181881000055,
+      "latency_p95_seconds": 14.265654392199576,
+      "examples_per_second": 0.08988935392113091,
+      "mean_reasoning_tokens": 401.0882352941176,
+      "natural_close_fraction": 0.7058823529411765,
+      "forced_close_fraction": 0.29411764705882354,
+      "max_peak_allocated_bytes": 1333284352,
+      "prediction_counts": {
+        "True": 19,
+        "False": 13,
+        "Unknown": 2,
+        "null": 0
+      }
+    },
+    "pilot/C512/depth_1": {
+      "n": 33,
+      "accuracy": 0.5757575757575758,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.42943722943722945,
+      "nll": 1.7230090284478596,
+      "brier_sum": 0.6586390688218281,
+      "ece_10_equal_bins": 0.2811203273859891,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.069812316000025,
+      "latency_p95_seconds": 14.481603994598846,
+      "examples_per_second": 0.07671536064938062,
+      "mean_reasoning_tokens": 468.969696969697,
+      "natural_close_fraction": 0.30303030303030304,
+      "forced_close_fraction": 0.696969696969697,
+      "max_peak_allocated_bytes": 1333829120,
+      "prediction_counts": {
+        "True": 18,
+        "False": 6,
+        "Unknown": 9,
+        "null": 0
+      }
+    },
+    "pilot/C512/depth_2": {
+      "n": 67,
+      "accuracy": 0.5223880597014925,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3624011582581579,
+      "nll": 2.680060420378382,
+      "brier_sum": 0.8177645424851743,
+      "ece_10_equal_bins": 0.338209218943297,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.092548688000534,
+      "latency_p95_seconds": 14.410932467198654,
+      "examples_per_second": 0.07232106367271335,
+      "mean_reasoning_tokens": 499.0149253731343,
+      "natural_close_fraction": 0.1791044776119403,
+      "forced_close_fraction": 0.8208955223880597,
+      "max_peak_allocated_bytes": 1334088192,
+      "prediction_counts": {
+        "True": 40,
+        "False": 7,
+        "Unknown": 20,
+        "null": 0
+      }
+    },
+    "pilot/C512/depth_3": {
+      "n": 66,
+      "accuracy": 0.48484848484848486,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3389912122306488,
+      "nll": 2.9556928975445604,
+      "brier_sum": 0.867716335451227,
+      "ece_10_equal_bins": 0.3651743287389929,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.168134465999174,
+      "latency_p95_seconds": 14.539341376249467,
+      "examples_per_second": 0.07262081429784925,
+      "mean_reasoning_tokens": 496.3636363636364,
+      "natural_close_fraction": 0.13636363636363635,
+      "forced_close_fraction": 0.8636363636363636,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 38,
+        "False": 6,
+        "Unknown": 22,
+        "null": 0
+      }
+    },
+    "pilot/C512/depth_5": {
+      "n": 67,
+      "accuracy": 0.34328358208955223,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.24915824915824913,
+      "nll": 3.207303029087923,
+      "brier_sum": 1.0828497803386974,
+      "ece_10_equal_bins": 0.48555177272255734,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.093561945999681,
+      "latency_p95_seconds": 14.459083176999775,
+      "examples_per_second": 0.07203057683513193,
+      "mean_reasoning_tokens": 501.7761194029851,
+      "natural_close_fraction": 0.07462686567164178,
+      "forced_close_fraction": 0.9253731343283582,
+      "max_peak_allocated_bytes": 1333318144,
+      "prediction_counts": {
+        "True": 32,
+        "False": 3,
+        "Unknown": 32,
+        "null": 0
+      }
+    },
+    "pilot/C512/class_True": {
+      "n": 134,
+      "accuracy": 0.7910447761194029,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.29444444444444445,
+      "nll": 0.7683429766926038,
+      "brier_sum": 0.3315554847876001,
+      "ece_10_equal_bins": 0.1393462103694233,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.06953219100069,
+      "latency_p95_seconds": 14.461342807849359,
+      "examples_per_second": 0.07611473687934944,
+      "mean_reasoning_tokens": 473.82835820895525,
+      "natural_close_fraction": 0.27611940298507465,
+      "forced_close_fraction": 0.7238805970149254,
+      "max_peak_allocated_bytes": 1334088192,
+      "prediction_counts": {
+        "True": 106,
+        "False": 3,
+        "Unknown": 25,
+        "null": 0
+      }
+    },
+    "pilot/C512/class_False": {
+      "n": 133,
+      "accuracy": 0.24060150375939848,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.1292929292929293,
+      "nll": 4.357462012601594,
+      "brier_sum": 1.2892106455696613,
+      "ece_10_equal_bins": 0.5958903180925469,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.113306166000257,
+      "latency_p95_seconds": 14.454435911000473,
+      "examples_per_second": 0.07334614381434644,
+      "mean_reasoning_tokens": 491.97744360902254,
+      "natural_close_fraction": 0.17293233082706766,
+      "forced_close_fraction": 0.8270676691729323,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 41,
+        "False": 32,
+        "Unknown": 60,
+        "null": 0
+      }
+    },
+    "pilot/C512/class_Unknown": {
+      "n": 133,
+      "accuracy": 0.5413533834586466,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.23414634146341462,
+      "nll": 1.9842876203846311,
+      "brier_sum": 0.6745758239646527,
+      "ece_10_equal_bins": 0.31081389350102356,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.059260294001433,
+      "latency_p95_seconds": 14.42983564199967,
+      "examples_per_second": 0.07633709850287734,
+      "mean_reasoning_tokens": 472.6766917293233,
+      "natural_close_fraction": 0.3157894736842105,
+      "forced_close_fraction": 0.6842105263157895,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 59,
+        "False": 2,
+        "Unknown": 72,
+        "null": 0
+      }
+    },
+    "pilot/C512/family_AttNeg": {
+      "n": 109,
+      "accuracy": 0.5688073394495413,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.5602409638554217,
+      "nll": 2.4108227880131934,
+      "brier_sum": 0.7219388275741545,
+      "ece_10_equal_bins": 0.30443830227633134,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.172005802000058,
+      "latency_p95_seconds": 14.568263812000078,
+      "examples_per_second": 0.07687061027262801,
+      "mean_reasoning_tokens": 466.6788990825688,
+      "natural_close_fraction": 0.29357798165137616,
+      "forced_close_fraction": 0.7064220183486238,
+      "max_peak_allocated_bytes": 1322460672,
+      "prediction_counts": {
+        "True": 46,
+        "False": 16,
+        "Unknown": 47,
+        "null": 0
+      }
+    },
+    "pilot/C512/family_AttNoneg": {
+      "n": 99,
+      "accuracy": 0.5858585858585859,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.5781843277495451,
+      "nll": 2.4336177592730657,
+      "brier_sum": 0.6926348775773887,
+      "ece_10_equal_bins": 0.30248382055398193,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.014882070001477,
+      "latency_p95_seconds": 14.374747661901711,
+      "examples_per_second": 0.07830833917458561,
+      "mean_reasoning_tokens": 460.77777777777777,
+      "natural_close_fraction": 0.3939393939393939,
+      "forced_close_fraction": 0.6060606060606061,
+      "max_peak_allocated_bytes": 1322537472,
+      "prediction_counts": {
+        "True": 42,
+        "False": 13,
+        "Unknown": 44,
+        "null": 0
+      }
+    },
+    "pilot/C512/family_RelNeg": {
+      "n": 96,
+      "accuracy": 0.40625,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3544566544566545,
+      "nll": 2.242166777276432,
+      "brier_sum": 0.8787846013033546,
+      "ece_10_equal_bins": 0.4203741593907277,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.065110423000078,
+      "latency_p95_seconds": 14.296060396749454,
+      "examples_per_second": 0.07168074863056506,
+      "mean_reasoning_tokens": 505.4479166666667,
+      "natural_close_fraction": 0.11458333333333333,
+      "forced_close_fraction": 0.8854166666666666,
+      "max_peak_allocated_bytes": 1334606336,
+      "prediction_counts": {
+        "True": 59,
+        "False": 4,
+        "Unknown": 33,
+        "null": 0
+      }
+    },
+    "pilot/C512/family_RelNoneg": {
+      "n": 96,
+      "accuracy": 0.53125,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.4682132682132682,
+      "nll": 2.3693209102496664,
+      "brier_sum": 0.770693006236832,
+      "ece_10_equal_bins": 0.31848533016939956,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.083043048001855,
+      "latency_p95_seconds": 14.286494587000561,
+      "examples_per_second": 0.07415304666441927,
+      "mean_reasoning_tokens": 487.3333333333333,
+      "natural_close_fraction": 0.20833333333333334,
+      "forced_close_fraction": 0.7916666666666666,
+      "max_peak_allocated_bytes": 1333334528,
+      "prediction_counts": {
+        "True": 59,
+        "False": 4,
+        "Unknown": 33,
+        "null": 0
+      }
+    },
+    "pilot/D/all": {
+      "n": 267,
+      "accuracy": 0.50187265917603,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2227763923524522,
+      "nll": 4.831051467837222,
+      "brier_sum": 0.9955644686500252,
+      "ece_10_equal_bins": 0.497604509194692,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03662414500286104,
+      "latency_p95_seconds": 0.04831615960029012,
+      "examples_per_second": 26.49318504415201,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264836096,
+      "prediction_counts": {
+        "True": 267,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/deep": {
+      "n": 133,
+      "accuracy": 0.5037593984962406,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22333333333333336,
+      "nll": 4.889261866112739,
+      "brier_sum": 0.9921399809725774,
+      "ece_10_equal_bins": 0.4960765556285256,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03695011699892348,
+      "latency_p95_seconds": 0.04875440540054114,
+      "examples_per_second": 25.511315288923154,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264836096,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/shallow": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.61685053215453,
+      "brier_sum": 0.9836803034983168,
+      "ece_10_equal_bins": 0.4911418405931387,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03576327900009346,
+      "latency_p95_seconds": 0.04330885099952865,
+      "examples_per_second": 28.055120086941432,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/unknown": {
+      "n": 0,
+      "prediction_counts": {
+        "True": 0,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/depth_0": {
+      "n": 34,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.761035678640379,
+      "brier_sum": 0.998214555419411,
+      "ece_10_equal_bins": 0.49772836004986487,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03527312700134644,
+      "latency_p95_seconds": 0.042352951999237116,
+      "examples_per_second": 28.2507627106226,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1260172800,
+      "prediction_counts": {
+        "True": 34,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/depth_1": {
+      "n": 33,
+      "accuracy": 0.5151515151515151,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22666666666666668,
+      "nll": 4.4682961388054725,
+      "brier_sum": 0.9687056197008261,
+      "ece_10_equal_bins": 0.484355729637724,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03609646300174063,
+      "latency_p95_seconds": 0.042001631200400874,
+      "examples_per_second": 27.8563629689301,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1261338112,
+      "prediction_counts": {
+        "True": 33,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/depth_2": {
+      "n": 67,
+      "accuracy": 0.4925373134328358,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22,
+      "nll": 4.9297004188834395,
+      "brier_sum": 1.0142464974002487,
+      "ece_10_equal_bins": 0.5071002796514711,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03652923199842917,
+      "latency_p95_seconds": 0.04710737569912453,
+      "examples_per_second": 27.05393181846673,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262892544,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/depth_3": {
+      "n": 66,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.9519045857132085,
+      "brier_sum": 0.9995842804774974,
+      "ece_10_equal_bins": 0.49980008240902063,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03668488549919857,
+      "latency_p95_seconds": 0.04912687099931645,
+      "examples_per_second": 26.245108122274655,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264577024,
+      "prediction_counts": {
+        "True": 66,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/depth_5": {
+      "n": 67,
+      "accuracy": 0.5074626865671642,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22442244224422445,
+      "nll": 4.827554112476455,
+      "brier_sum": 0.9848067904154914,
+      "ece_10_equal_bins": 0.49240860387460506,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03722248800113448,
+      "latency_p95_seconds": 0.048602896500960925,
+      "examples_per_second": 24.827517749837245,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264836096,
+      "prediction_counts": {
+        "True": 67,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/class_True": {
+      "n": 134,
+      "accuracy": 1.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "nll": 0.0004301630617519884,
+      "brier_sum": 2.6959482760840557e-05,
+      "ece_10_equal_bins": 0.00042310223650576795,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.036611521001759684,
+      "latency_p95_seconds": 0.048276789247574926,
+      "examples_per_second": 26.66605038637383,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264706048,
+      "prediction_counts": {
+        "True": 134,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/class_False": {
+      "n": 133,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 9.697993233550854,
+      "brier_sum": 1.9985872222471188,
+      "ece_10_equal_bins": 0.9993766891328912,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03662414500286104,
+      "latency_p95_seconds": 0.04836652780068107,
+      "examples_per_second": 26.321271829016357,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264836096,
+      "prediction_counts": {
+        "True": 133,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/class_Unknown": {
+      "n": 0,
+      "prediction_counts": {
+        "True": 0,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/family_AttNeg": {
+      "n": 73,
+      "accuracy": 0.5068493150684932,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22424242424242424,
+      "nll": 4.758514481113266,
+      "brier_sum": 0.9856420431875842,
+      "ece_10_equal_bins": 0.49276999986335024,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03546297600041726,
+      "latency_p95_seconds": 0.03719642060023034,
+      "examples_per_second": 28.398104480867094,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1250391552,
+      "prediction_counts": {
+        "True": 73,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/family_AttNoneg": {
+      "n": 66,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.577279260615928,
+      "brier_sum": 0.9988292691458133,
+      "ece_10_equal_bins": 0.4994275470574697,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.035798658998828614,
+      "latency_p95_seconds": 0.03771618899918394,
+      "examples_per_second": 28.31768039585585,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1251217920,
+      "prediction_counts": {
+        "True": 66,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/family_RelNeg": {
+      "n": 64,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 5.078236558331908,
+      "brier_sum": 0.9997214203515455,
+      "ece_10_equal_bins": 0.4991708341985941,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03861423849957646,
+      "latency_p95_seconds": 0.0492803870993157,
+      "examples_per_second": 24.12080293288733,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264706048,
+      "prediction_counts": {
+        "True": 64,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "pilot/D/family_RelNoneg": {
+      "n": 64,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.928306466521505,
+      "brier_sum": 0.9993584579803186,
+      "ece_10_equal_bins": 0.499672538600862,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.037619383499986725,
+      "latency_p95_seconds": 0.04820392334804637,
+      "examples_per_second": 25.36201671321919,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1264836096,
+      "prediction_counts": {
+        "True": 64,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/all": {
+      "n": 120,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 5.938689081017609,
+      "brier_sum": 1.3253674371709585,
+      "ece_10_equal_bins": 0.6639936943848928,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03623775249980099,
+      "latency_p95_seconds": 0.046403212100995,
+      "examples_per_second": 27.452762193936326,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262504448,
+      "prediction_counts": {
+        "True": 120,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/deep": {
+      "n": 40,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.763470679697524,
+      "brier_sum": 0.9989997482407341,
+      "ece_10_equal_bins": 0.49942132979631426,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.036621839499275666,
+      "latency_p95_seconds": 0.04669036705199687,
+      "examples_per_second": 26.67937147220758,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259524608,
+      "prediction_counts": {
+        "True": 40,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/shallow": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.477621195964919,
+      "brier_sum": 0.9938014277820685,
+      "ece_10_equal_bins": 0.4966302335262298,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03630954250002105,
+      "latency_p95_seconds": 0.0392540028975418,
+      "examples_per_second": 27.964432753439805,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259265536,
+      "prediction_counts": {
+        "True": 20,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/unknown": {
+      "n": 40,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.435737476384883,
+      "brier_sum": 1.982296867084274,
+      "ece_10_equal_bins": 0.9953316628932952,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03626415299913788,
+      "latency_p95_seconds": 0.038715162252628915,
+      "examples_per_second": 27.528425301476442,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262504448,
+      "prediction_counts": {
+        "True": 40,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/depth_0": {
+      "n": 10,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.497646129399011,
+      "brier_sum": 0.9928457502328604,
+      "ece_10_equal_bins": 0.4961492419242859,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03619268749935145,
+      "latency_p95_seconds": 0.03718629070153838,
+      "examples_per_second": 28.476728964541316,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1248202240,
+      "prediction_counts": {
+        "True": 10,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/depth_1": {
+      "n": 10,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.457596262530827,
+      "brier_sum": 0.9947571053312767,
+      "ece_10_equal_bins": 0.49711122512817385,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.036809198500122875,
+      "latency_p95_seconds": 0.042774091897263125,
+      "examples_per_second": 27.47024321590312,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259265536,
+      "prediction_counts": {
+        "True": 10,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/depth_2": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.7560969779759175,
+      "brier_sum": 0.995809964593669,
+      "ece_10_equal_bins": 0.49782594740390773,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03545287550150533,
+      "latency_p95_seconds": 0.03864903935027542,
+      "examples_per_second": 28.424375632964747,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259783680,
+      "prediction_counts": {
+        "True": 20,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/depth_3": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.801052857459096,
+      "brier_sum": 0.9995632007154807,
+      "ece_10_equal_bins": 0.4997285157442093,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.035850451999067445,
+      "latency_p95_seconds": 0.03899069495128061,
+      "examples_per_second": 27.459851017360123,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1257323008,
+      "prediction_counts": {
+        "True": 20,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/depth_5": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 4.725888501935954,
+      "brier_sum": 0.9984362957659878,
+      "ece_10_equal_bins": 0.49911414384841923,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03683210249982949,
+      "latency_p95_seconds": 0.04753247714997997,
+      "examples_per_second": 25.942032237969823,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259524608,
+      "prediction_counts": {
+        "True": 20,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/class_True": {
+      "n": 40,
+      "accuracy": 1.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "nll": 0.0003412711349160733,
+      "brier_sum": 1.2258746632719472e-06,
+      "ece_10_equal_bins": 0.00034095048904414504,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03613214799952402,
+      "latency_p95_seconds": 0.045597209650259166,
+      "examples_per_second": 27.595771133873672,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259524608,
+      "prediction_counts": {
+        "True": 40,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/class_False": {
+      "n": 40,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 9.379988495533027,
+      "brier_sum": 1.9938042185539395,
+      "ece_10_equal_bins": 0.9969903707504273,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03640466149954591,
+      "latency_p95_seconds": 0.046403212100995,
+      "examples_per_second": 27.236752357460386,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259783680,
+      "prediction_counts": {
+        "True": 40,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/class_Unknown": {
+      "n": 40,
+      "accuracy": 0.0,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.0,
+      "nll": 8.435737476384883,
+      "brier_sum": 1.982296867084274,
+      "ece_10_equal_bins": 0.9953316628932952,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03626415299913788,
+      "latency_p95_seconds": 0.038715162252628915,
+      "examples_per_second": 27.528425301476442,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262504448,
+      "prediction_counts": {
+        "True": 40,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/family_AttNeg": {
+      "n": 38,
+      "accuracy": 0.34210526315789475,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.1699346405228758,
+      "nll": 5.670977202329558,
+      "brier_sum": 1.2991165761645922,
+      "ece_10_equal_bins": 0.6528467237949371,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.035587765498348745,
+      "latency_p95_seconds": 0.03777219990042795,
+      "examples_per_second": 28.248351159919864,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1246586368,
+      "prediction_counts": {
+        "True": 38,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/family_AttNoneg": {
+      "n": 34,
+      "accuracy": 0.3235294117647059,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16296296296296295,
+      "nll": 5.52178738111621,
+      "brier_sum": 1.3444373758060315,
+      "ece_10_equal_bins": 0.6730945040197933,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03503265099971031,
+      "latency_p95_seconds": 0.03717521970083908,
+      "examples_per_second": 29.043154019489133,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1246465536,
+      "prediction_counts": {
+        "True": 34,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/family_RelNeg": {
+      "n": 24,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.588061821861,
+      "brier_sum": 1.333006407042021,
+      "ece_10_equal_bins": 0.6664954995115597,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.037146860999200726,
+      "latency_p95_seconds": 0.047480752399860646,
+      "examples_per_second": 25.412920542227532,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1262504448,
+      "prediction_counts": {
+        "True": 24,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/A/family_RelNoneg": {
+      "n": 24,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 6.303804222957276,
+      "brier_sum": 1.3322765841602913,
+      "ece_10_equal_bins": 0.6662484457095463,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.03671120349827106,
+      "latency_p95_seconds": 0.04686589249758981,
+      "examples_per_second": 26.34871531387162,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1259524608,
+      "prediction_counts": {
+        "True": 24,
+        "False": 0,
+        "Unknown": 0,
+        "null": 0
+      }
+    },
+    "validation/C128/all": {
+      "n": 120,
+      "accuracy": 0.375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3090729997105796,
+      "nll": 2.251119213363134,
+      "brier_sum": 0.9716702660132603,
+      "ece_10_equal_bins": 0.4027773184080919,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.591883802500888,
+      "latency_p95_seconds": 3.6748674848997327,
+      "examples_per_second": 0.2780244787882891,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 63,
+        "False": 1,
+        "Unknown": 56,
+        "null": 0
+      }
+    },
+    "validation/C128/deep": {
+      "n": 40,
+      "accuracy": 0.375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2380952380952381,
+      "nll": 2.1348790690376087,
+      "brier_sum": 0.9466817505538874,
+      "ece_10_equal_bins": 0.3849470674991608,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.592819404999318,
+      "latency_p95_seconds": 3.7300181964494183,
+      "examples_per_second": 0.27691091009098817,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 22,
+        "False": 0,
+        "Unknown": 18,
+        "null": 0
+      }
+    },
+    "validation/C128/shallow": {
+      "n": 20,
+      "accuracy": 0.3,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19999999999999998,
+      "nll": 3.0932725134991585,
+      "brier_sum": 1.203626771125275,
+      "ece_10_equal_bins": 0.565936952829361,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.587199879999389,
+      "latency_p95_seconds": 3.673330270898987,
+      "examples_per_second": 0.2789452353736246,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 10,
+        "False": 0,
+        "Unknown": 10,
+        "null": 0
+      }
+    },
+    "validation/C128/unknown": {
+      "n": 40,
+      "accuracy": 0.425,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19883040935672514,
+      "nll": 1.7599881725848565,
+      "brier_sum": 0.8305706521353085,
+      "ece_10_equal_bins": 0.3504985250532627,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.592538445500395,
+      "latency_p95_seconds": 3.6619405262008513,
+      "examples_per_second": 0.2784822644028962,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 23,
+        "False": 0,
+        "Unknown": 17,
+        "null": 0
+      }
+    },
+    "validation/C128/depth_0": {
+      "n": 10,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.24242424242424243,
+      "nll": 3.208350609148424,
+      "brier_sum": 1.0777297225871396,
+      "ece_10_equal_bins": 0.4407490134239197,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.587163035499543,
+      "latency_p95_seconds": 3.6710513703488687,
+      "examples_per_second": 0.2787777081698437,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266132480,
+      "prediction_counts": {
+        "True": 6,
+        "False": 0,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C128/depth_1": {
+      "n": 10,
+      "accuracy": 0.2,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.14814814814814814,
+      "nll": 2.9781944178498936,
+      "brier_sum": 1.3295238196634107,
+      "ece_10_equal_bins": 0.6911248922348022,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.587199879999389,
+      "latency_p95_seconds": 3.642647955299071,
+      "examples_per_second": 0.2791129640443003,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 4,
+        "False": 0,
+        "Unknown": 6,
+        "null": 0
+      }
+    },
+    "validation/C128/depth_2": {
+      "n": 20,
+      "accuracy": 0.35,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2828282828282828,
+      "nll": 2.6237082834347176,
+      "brier_sum": 1.071890019575894,
+      "ece_10_equal_bins": 0.5087796986103058,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.592543475500861,
+      "latency_p95_seconds": 3.6593591362996447,
+      "examples_per_second": 0.2784293777362663,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 8,
+        "False": 1,
+        "Unknown": 11,
+        "null": 0
+      }
+    },
+    "validation/C128/depth_3": {
+      "n": 20,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25396825396825395,
+      "nll": 2.017108225125588,
+      "brier_sum": 0.9028582132046379,
+      "ece_10_equal_bins": 0.32637775540351865,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.6025734574996022,
+      "latency_p95_seconds": 3.6859940469492356,
+      "examples_per_second": 0.27729012733769276,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1279737344,
+      "prediction_counts": {
+        "True": 11,
+        "False": 0,
+        "Unknown": 9,
+        "null": 0
+      }
+    },
+    "validation/C128/depth_5": {
+      "n": 20,
+      "accuracy": 0.35,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2222222222222222,
+      "nll": 2.252649912949628,
+      "brier_sum": 0.9905052879031375,
+      "ece_10_equal_bins": 0.44351637959480283,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5913599569994403,
+      "latency_p95_seconds": 3.800069905750388,
+      "examples_per_second": 0.27653272864980555,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 11,
+        "False": 0,
+        "Unknown": 9,
+        "null": 0
+      }
+    },
+    "validation/C128/class_True": {
+      "n": 40,
+      "accuracy": 0.675,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.26865671641791045,
+      "nll": 0.7939082682159382,
+      "brier_sum": 0.513665863420703,
+      "ece_10_equal_bins": 0.19579817205667496,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.592543475500861,
+      "latency_p95_seconds": 3.6750133462497616,
+      "examples_per_second": 0.2777525643721183,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 27,
+        "False": 0,
+        "Unknown": 13,
+        "null": 0
+      }
+    },
+    "validation/C128/class_False": {
+      "n": 40,
+      "accuracy": 0.025,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.016260162601626018,
+      "nll": 4.199461199288608,
+      "brier_sum": 1.570774282483769,
+      "ece_10_equal_bins": 0.7474842235445976,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.5915497745008906,
+      "latency_p95_seconds": 3.6868926747487416,
+      "examples_per_second": 0.27783974914664367,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 13,
+        "False": 1,
+        "Unknown": 26,
+        "null": 0
+      }
+    },
+    "validation/C128/class_Unknown": {
+      "n": 40,
+      "accuracy": 0.425,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19883040935672514,
+      "nll": 1.7599881725848565,
+      "brier_sum": 0.8305706521353085,
+      "ece_10_equal_bins": 0.3504985250532627,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.592538445500395,
+      "latency_p95_seconds": 3.6619405262008513,
+      "examples_per_second": 0.2784822644028962,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 23,
+        "False": 0,
+        "Unknown": 17,
+        "null": 0
+      }
+    },
+    "validation/C128/family_AttNeg": {
+      "n": 38,
+      "accuracy": 0.3684210526315789,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2962962962962963,
+      "nll": 2.249864227391189,
+      "brier_sum": 1.023644818205613,
+      "ece_10_equal_bins": 0.4708904027938842,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.579595902499932,
+      "latency_p95_seconds": 3.6125013459997715,
+      "examples_per_second": 0.2802802591558719,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1264446976,
+      "prediction_counts": {
+        "True": 14,
+        "False": 0,
+        "Unknown": 24,
+        "null": 0
+      }
+    },
+    "validation/C128/family_AttNoneg": {
+      "n": 34,
+      "accuracy": 0.4117647058823529,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3341604631927213,
+      "nll": 2.127071244597482,
+      "brier_sum": 0.8884346054602464,
+      "ece_10_equal_bins": 0.3649424472275902,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.596162480500425,
+      "latency_p95_seconds": 3.7313451159001487,
+      "examples_per_second": 0.2773148437183625,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1264317952,
+      "prediction_counts": {
+        "True": 15,
+        "False": 0,
+        "Unknown": 19,
+        "null": 0
+      }
+    },
+    "validation/C128/family_RelNeg": {
+      "n": 24,
+      "accuracy": 0.375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.30484330484330485,
+      "nll": 2.3928441771497173,
+      "brier_sum": 0.9698103687610016,
+      "ece_10_equal_bins": 0.4316409466167291,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.6051814754991938,
+      "latency_p95_seconds": 3.659132807700189,
+      "examples_per_second": 0.27701173266469875,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 18,
+        "False": 1,
+        "Unknown": 5,
+        "null": 0
+      }
+    },
+    "validation/C128/family_RelNoneg": {
+      "n": 24,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25,
+      "nll": 2.2871159331168043,
+      "brier_sum": 1.0091543080777294,
+      "ece_10_equal_bins": 0.4535389070709547,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 3.603127996000694,
+      "latency_p95_seconds": 3.674304480999672,
+      "examples_per_second": 0.27651415923477835,
+      "mean_reasoning_tokens": 128.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1293460992,
+      "prediction_counts": {
+        "True": 16,
+        "False": 0,
+        "Unknown": 8,
+        "null": 0
+      }
+    },
+    "validation/C32/all": {
+      "n": 120,
+      "accuracy": 0.4166666666666667,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3878996450136401,
+      "nll": 1.7605682663993734,
+      "brier_sum": 0.8319206655558286,
+      "ece_10_equal_bins": 0.2921794332563877,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9182830280005874,
+      "latency_p95_seconds": 0.9476244417983253,
+      "examples_per_second": 1.0848387091330807,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266650624,
+      "prediction_counts": {
+        "True": 66,
+        "False": 18,
+        "Unknown": 36,
+        "null": 0
+      }
+    },
+    "validation/C32/deep": {
+      "n": 40,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2519148936170213,
+      "nll": 2.0805373977064634,
+      "brier_sum": 0.8391633932070828,
+      "ece_10_equal_bins": 0.3360884547233582,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9219614819994604,
+      "latency_p95_seconds": 0.9521178266972129,
+      "examples_per_second": 1.0783692392710171,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263669760,
+      "prediction_counts": {
+        "True": 27,
+        "False": 5,
+        "Unknown": 8,
+        "null": 0
+      }
+    },
+    "validation/C32/shallow": {
+      "n": 20,
+      "accuracy": 0.35,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25555555555555554,
+      "nll": 2.199673996068552,
+      "brier_sum": 0.9884058342663934,
+      "ece_10_equal_bins": 0.3517739102244377,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.918163464501049,
+      "latency_p95_seconds": 0.9576890331469258,
+      "examples_per_second": 1.0863506545918606,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263410688,
+      "prediction_counts": {
+        "True": 10,
+        "False": 5,
+        "Unknown": 5,
+        "null": 0
+      }
+    },
+    "validation/C32/unknown": {
+      "n": 40,
+      "accuracy": 0.425,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19883040935672514,
+      "nll": 1.3943240163298736,
+      "brier_sum": 0.82358160510275,
+      "ece_10_equal_bins": 0.3863661646842957,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9176198719997046,
+      "latency_p95_seconds": 0.9426300379000168,
+      "examples_per_second": 1.0886064217079328,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266650624,
+      "prediction_counts": {
+        "True": 17,
+        "False": 6,
+        "Unknown": 17,
+        "null": 0
+      }
+    },
+    "validation/C32/depth_0": {
+      "n": 10,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.26515151515151514,
+      "nll": 2.3209572056304575,
+      "brier_sum": 0.9379143615362928,
+      "ece_10_equal_bins": 0.37155660986900335,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9110851804998674,
+      "latency_p95_seconds": 0.9495867612484289,
+      "examples_per_second": 1.0905801044135641,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1252457984,
+      "prediction_counts": {
+        "True": 6,
+        "False": 3,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "validation/C32/depth_1": {
+      "n": 10,
+      "accuracy": 0.3,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.24338624338624337,
+      "nll": 2.078390786506647,
+      "brier_sum": 1.0388973069964942,
+      "ece_10_equal_bins": 0.40171850025653844,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9188275395008532,
+      "latency_p95_seconds": 0.9533969712492762,
+      "examples_per_second": 1.0821538830487218,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263410688,
+      "prediction_counts": {
+        "True": 4,
+        "False": 2,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C32/depth_2": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.35353535353535354,
+      "nll": 1.4140127742550155,
+      "brier_sum": 0.6776281624489123,
+      "ece_10_equal_bins": 0.2690553516149521,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9170812334996299,
+      "latency_p95_seconds": 0.934915027149691,
+      "examples_per_second": 1.0888508715239062,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263928832,
+      "prediction_counts": {
+        "True": 12,
+        "False": 2,
+        "Unknown": 6,
+        "null": 0
+      }
+    },
+    "validation/C32/depth_3": {
+      "n": 20,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25,
+      "nll": 2.039734499267714,
+      "brier_sum": 0.787490146248889,
+      "ece_10_equal_bins": 0.34419419616460806,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9276559975005512,
+      "latency_p95_seconds": 0.9521178266972129,
+      "examples_per_second": 1.0758247720970677,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1261468160,
+      "prediction_counts": {
+        "True": 14,
+        "False": 2,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C32/depth_5": {
+      "n": 20,
+      "accuracy": 0.4,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.25418060200668896,
+      "nll": 2.1213402961452124,
+      "brier_sum": 0.8908366401652769,
+      "ece_10_equal_bins": 0.347389917075634,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9186586600008013,
+      "latency_p95_seconds": 0.9513994339005877,
+      "examples_per_second": 1.0809257709786577,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263669760,
+      "prediction_counts": {
+        "True": 13,
+        "False": 3,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C32/class_True": {
+      "n": 40,
+      "accuracy": 0.675,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.26865671641791045,
+      "nll": 0.6951715327549962,
+      "brier_sum": 0.42682349819931786,
+      "ece_10_equal_bins": 0.09714262858033178,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9179189979986404,
+      "latency_p95_seconds": 0.9578049465972072,
+      "examples_per_second": 1.0827501360556857,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263669760,
+      "prediction_counts": {
+        "True": 27,
+        "False": 6,
+        "Unknown": 7,
+        "null": 0
+      }
+    },
+    "validation/C32/class_False": {
+      "n": 40,
+      "accuracy": 0.15,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.08695652173913043,
+      "nll": 3.1922092501132506,
+      "brier_sum": 1.2453568933654182,
+      "ece_10_equal_bins": 0.5345287904143333,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9183293409987527,
+      "latency_p95_seconds": 0.9497440160503174,
+      "examples_per_second": 1.0831791811506841,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263928832,
+      "prediction_counts": {
+        "True": 22,
+        "False": 6,
+        "Unknown": 12,
+        "null": 0
+      }
+    },
+    "validation/C32/class_Unknown": {
+      "n": 40,
+      "accuracy": 0.425,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.19883040935672514,
+      "nll": 1.3943240163298736,
+      "brier_sum": 0.82358160510275,
+      "ece_10_equal_bins": 0.3863661646842957,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9176198719997046,
+      "latency_p95_seconds": 0.9426300379000168,
+      "examples_per_second": 1.0886064217079328,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266650624,
+      "prediction_counts": {
+        "True": 17,
+        "False": 6,
+        "Unknown": 17,
+        "null": 0
+      }
+    },
+    "validation/C32/family_AttNeg": {
+      "n": 38,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.49661835748792266,
+      "nll": 1.81111924617959,
+      "brier_sum": 0.8089879157711767,
+      "ece_10_equal_bins": 0.3318605164163991,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9161643294992246,
+      "latency_p95_seconds": 0.9229493913977421,
+      "examples_per_second": 1.0940315571002315,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1250667008,
+      "prediction_counts": {
+        "True": 17,
+        "False": 10,
+        "Unknown": 11,
+        "null": 0
+      }
+    },
+    "validation/C32/family_AttNoneg": {
+      "n": 34,
+      "accuracy": 0.35294117647058826,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.33475101896154524,
+      "nll": 1.7899207425909227,
+      "brier_sum": 0.8526446165730486,
+      "ece_10_equal_bins": 0.3611109528471442,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9164282705005462,
+      "latency_p95_seconds": 0.9398878945483374,
+      "examples_per_second": 1.089566954876402,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1250529792,
+      "prediction_counts": {
+        "True": 11,
+        "False": 8,
+        "Unknown": 15,
+        "null": 0
+      }
+    },
+    "validation/C32/family_RelNeg": {
+      "n": 24,
+      "accuracy": 0.375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.24611708482676223,
+      "nll": 1.8860590238813382,
+      "brier_sum": 0.8791302371192747,
+      "ece_10_equal_bins": 0.33914439752697945,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9304715029993531,
+      "latency_p95_seconds": 0.9492107618005321,
+      "examples_per_second": 1.0744887851868117,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1266650624,
+      "prediction_counts": {
+        "True": 23,
+        "False": 0,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "validation/C32/family_RelNoneg": {
+      "n": 24,
+      "accuracy": 0.4166666666666667,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.3307757885763001,
+      "nll": 1.513455782994037,
+      "brier_sum": 0.7916623505436862,
+      "ece_10_equal_bins": 0.2893113320072492,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.9265568850005366,
+      "latency_p95_seconds": 0.9592813395467601,
+      "examples_per_second": 1.07428959780812,
+      "mean_reasoning_tokens": 32.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 1.0,
+      "max_peak_allocated_bytes": 1263669760,
+      "prediction_counts": {
+        "True": 15,
+        "False": 0,
+        "Unknown": 9,
+        "null": 0
+      }
+    },
+    "validation/C512/all": {
+      "n": 120,
+      "accuracy": 0.49166666666666664,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.4480830148125485,
+      "nll": 2.758962732542719,
+      "brier_sum": 0.82788507971371,
+      "ece_10_equal_bins": 0.38371840020020803,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.22511918300006,
+      "latency_p95_seconds": 14.53197967084925,
+      "examples_per_second": 0.07434958966143551,
+      "mean_reasoning_tokens": 482.10833333333335,
+      "natural_close_fraction": 0.225,
+      "forced_close_fraction": 0.775,
+      "max_peak_allocated_bytes": 1334995456,
+      "prediction_counts": {
+        "True": 69,
+        "False": 9,
+        "Unknown": 42,
+        "null": 0
+      }
+    },
+    "validation/C512/deep": {
+      "n": 40,
+      "accuracy": 0.375,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.20833333333333334,
+      "nll": 3.3757988139945083,
+      "brier_sum": 1.0428787318794173,
+      "ece_10_equal_bins": 0.4973830088973045,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.26714926349996,
+      "latency_p95_seconds": 14.712535278299583,
+      "examples_per_second": 0.07180792464389964,
+      "mean_reasoning_tokens": 498.05,
+      "natural_close_fraction": 0.1,
+      "forced_close_fraction": 0.9,
+      "max_peak_allocated_bytes": 1332949504,
+      "prediction_counts": {
+        "True": 28,
+        "False": 1,
+        "Unknown": 11,
+        "null": 0
+      }
+    },
+    "validation/C512/shallow": {
+      "n": 20,
+      "accuracy": 0.65,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.443701226309922,
+      "nll": 2.06331597902585,
+      "brier_sum": 0.6053260783361353,
+      "ece_10_equal_bins": 0.22247304022312164,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.169230163499378,
+      "latency_p95_seconds": 14.52342638764767,
+      "examples_per_second": 0.07818183581803596,
+      "mean_reasoning_tokens": 459.5,
+      "natural_close_fraction": 0.35,
+      "forced_close_fraction": 0.65,
+      "max_peak_allocated_bytes": 1332903424,
+      "prediction_counts": {
+        "True": 13,
+        "False": 3,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C512/unknown": {
+      "n": 40,
+      "accuracy": 0.525,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22950819672131148,
+      "nll": 2.7121006557502767,
+      "brier_sum": 0.7601246554589653,
+      "ece_10_equal_bins": 0.3759864062070846,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.199543956499838,
+      "latency_p95_seconds": 14.495661616751931,
+      "examples_per_second": 0.07333081284336017,
+      "mean_reasoning_tokens": 489.2,
+      "natural_close_fraction": 0.25,
+      "forced_close_fraction": 0.75,
+      "max_peak_allocated_bytes": 1334995456,
+      "prediction_counts": {
+        "True": 17,
+        "False": 2,
+        "Unknown": 21,
+        "null": 0
+      }
+    },
+    "validation/C512/depth_0": {
+      "n": 10,
+      "accuracy": 0.6,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.41414141414141414,
+      "nll": 2.2266422802650476,
+      "brier_sum": 0.6381187750920625,
+      "ece_10_equal_bins": 0.2554279863834381,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 13.301320143498742,
+      "latency_p95_seconds": 14.46474344384933,
+      "examples_per_second": 0.08061677467611125,
+      "mean_reasoning_tokens": 446.1,
+      "natural_close_fraction": 0.5,
+      "forced_close_fraction": 0.5,
+      "max_peak_allocated_bytes": 1322563072,
+      "prediction_counts": {
+        "True": 6,
+        "False": 1,
+        "Unknown": 3,
+        "null": 0
+      }
+    },
+    "validation/C512/depth_1": {
+      "n": 10,
+      "accuracy": 0.7,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.4682539682539682,
+      "nll": 1.8999896777866525,
+      "brier_sum": 0.5725333815802077,
+      "ece_10_equal_bins": 0.18951809406280518,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.221369560000312,
+      "latency_p95_seconds": 14.449781823401098,
+      "examples_per_second": 0.07588967371892844,
+      "mean_reasoning_tokens": 472.9,
+      "natural_close_fraction": 0.2,
+      "forced_close_fraction": 0.8,
+      "max_peak_allocated_bytes": 1332903424,
+      "prediction_counts": {
+        "True": 7,
+        "False": 2,
+        "Unknown": 1,
+        "null": 0
+      }
+    },
+    "validation/C512/depth_2": {
+      "n": 20,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.37606837606837606,
+      "nll": 2.314661476740889,
+      "brier_sum": 0.7559776252693604,
+      "ece_10_equal_bins": 0.3674560189247131,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.176103662501191,
+      "latency_p95_seconds": 14.519712774750406,
+      "examples_per_second": 0.07822644054961116,
+      "mean_reasoning_tokens": 458.65,
+      "natural_close_fraction": 0.3,
+      "forced_close_fraction": 0.7,
+      "max_peak_allocated_bytes": 1332995584,
+      "prediction_counts": {
+        "True": 11,
+        "False": 3,
+        "Unknown": 6,
+        "null": 0
+      }
+    },
+    "validation/C512/depth_3": {
+      "n": 20,
+      "accuracy": 0.3,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.1818181818181818,
+      "nll": 3.993315488158397,
+      "brier_sum": 1.1883744600967072,
+      "ece_10_equal_bins": 0.6308851808309556,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.29569086200172,
+      "latency_p95_seconds": 14.717810539899256,
+      "examples_per_second": 0.07350152313042621,
+      "mean_reasoning_tokens": 485.35,
+      "natural_close_fraction": 0.15,
+      "forced_close_fraction": 0.85,
+      "max_peak_allocated_bytes": 1332509184,
+      "prediction_counts": {
+        "True": 12,
+        "False": 1,
+        "Unknown": 7,
+        "null": 0
+      }
+    },
+    "validation/C512/depth_5": {
+      "n": 20,
+      "accuracy": 0.45,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.23076923076923075,
+      "nll": 2.7582821398306177,
+      "brier_sum": 0.8973830036621269,
+      "ece_10_equal_bins": 0.414797866344452,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.25239651749871,
+      "latency_p95_seconds": 14.479313170450041,
+      "examples_per_second": 0.07019061503813787,
+      "mean_reasoning_tokens": 510.75,
+      "natural_close_fraction": 0.05,
+      "forced_close_fraction": 0.95,
+      "max_peak_allocated_bytes": 1332949504,
+      "prediction_counts": {
+        "True": 16,
+        "False": 0,
+        "Unknown": 4,
+        "null": 0
+      }
+    },
+    "validation/C512/class_True": {
+      "n": 40,
+      "accuracy": 0.8,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2962962962962963,
+      "nll": 0.6409824304511662,
+      "brier_sum": 0.2825372007053598,
+      "ece_10_equal_bins": 0.14274875521659852,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.238103025001692,
+      "latency_p95_seconds": 14.58454321395111,
+      "examples_per_second": 0.07720151071772517,
+      "mean_reasoning_tokens": 463.0,
+      "natural_close_fraction": 0.325,
+      "forced_close_fraction": 0.675,
+      "max_peak_allocated_bytes": 1332949504,
+      "prediction_counts": {
+        "True": 32,
+        "False": 1,
+        "Unknown": 7,
+        "null": 0
+      }
+    },
+    "validation/C512/class_False": {
+      "n": 40,
+      "accuracy": 0.15,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.08695652173913043,
+      "nll": 4.923805111426711,
+      "brier_sum": 1.4409933829768053,
+      "ece_10_equal_bins": 0.6750572979450226,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.215292341999884,
+      "latency_p95_seconds": 14.519712774750404,
+      "examples_per_second": 0.0726745594502974,
+      "mean_reasoning_tokens": 494.125,
+      "natural_close_fraction": 0.1,
+      "forced_close_fraction": 0.9,
+      "max_peak_allocated_bytes": 1332995584,
+      "prediction_counts": {
+        "True": 20,
+        "False": 6,
+        "Unknown": 14,
+        "null": 0
+      }
+    },
+    "validation/C512/class_Unknown": {
+      "n": 40,
+      "accuracy": 0.525,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.22950819672131148,
+      "nll": 2.7121006557502767,
+      "brier_sum": 0.7601246554589653,
+      "ece_10_equal_bins": 0.3759864062070846,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.199543956499838,
+      "latency_p95_seconds": 14.495661616751931,
+      "examples_per_second": 0.07333081284336017,
+      "mean_reasoning_tokens": 489.2,
+      "natural_close_fraction": 0.25,
+      "forced_close_fraction": 0.75,
+      "max_peak_allocated_bytes": 1334995456,
+      "prediction_counts": {
+        "True": 17,
+        "False": 2,
+        "Unknown": 21,
+        "null": 0
+      }
+    },
+    "validation/C512/family_AttNeg": {
+      "n": 38,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.4604761904761905,
+      "nll": 2.3653864258268396,
+      "brier_sum": 0.8045064163242932,
+      "ece_10_equal_bins": 0.39557866203157527,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.096425539999473,
+      "latency_p95_seconds": 14.303852670748892,
+      "examples_per_second": 0.07640648081855998,
+      "mean_reasoning_tokens": 473.05263157894734,
+      "natural_close_fraction": 0.2631578947368421,
+      "forced_close_fraction": 0.7368421052631579,
+      "max_peak_allocated_bytes": 1322395136,
+      "prediction_counts": {
+        "True": 22,
+        "False": 3,
+        "Unknown": 13,
+        "null": 0
+      }
+    },
+    "validation/C512/family_AttNoneg": {
+      "n": 34,
+      "accuracy": 0.5882352941176471,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.576923076923077,
+      "nll": 2.8116228462672277,
+      "brier_sum": 0.7025147789109508,
+      "ece_10_equal_bins": 0.3202051292447483,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.248618661000364,
+      "latency_p95_seconds": 14.591745298200658,
+      "examples_per_second": 0.07679218153400806,
+      "mean_reasoning_tokens": 464.70588235294116,
+      "natural_close_fraction": 0.2647058823529412,
+      "forced_close_fraction": 0.7352941176470589,
+      "max_peak_allocated_bytes": 1322382848,
+      "prediction_counts": {
+        "True": 15,
+        "False": 5,
+        "Unknown": 14,
+        "null": 0
+      }
+    },
+    "validation/C512/family_RelNeg": {
+      "n": 24,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.2490842490842491,
+      "nll": 2.7932194858477644,
+      "brier_sum": 1.0183219011572304,
+      "ece_10_equal_bins": 0.48884900410970056,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.29104327099958,
+      "latency_p95_seconds": 14.493080896301763,
+      "examples_per_second": 0.07081988291819384,
+      "mean_reasoning_tokens": 505.2916666666667,
+      "natural_close_fraction": 0.16666666666666666,
+      "forced_close_fraction": 0.8333333333333334,
+      "max_peak_allocated_bytes": 1334995456,
+      "prediction_counts": {
+        "True": 18,
+        "False": 0,
+        "Unknown": 6,
+        "null": 0
+      }
+    },
+    "validation/C512/family_RelNoneg": {
+      "n": 24,
+      "accuracy": 0.5,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.40819964349376114,
+      "nll": 3.2732666370947583,
+      "brier_sum": 0.8520724014406751,
+      "ece_10_equal_bins": 0.3497861822446187,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 14.260264481999911,
+      "latency_p95_seconds": 14.690926618699631,
+      "examples_per_second": 0.07163847541490526,
+      "mean_reasoning_tokens": 497.9166666666667,
+      "natural_close_fraction": 0.16666666666666666,
+      "forced_close_fraction": 0.8333333333333334,
+      "max_peak_allocated_bytes": 1332949504,
+      "prediction_counts": {
+        "True": 14,
+        "False": 1,
+        "Unknown": 9,
+        "null": 0
+      }
+    }
+  },
+  "paired_comparisons": {
+    "pilot/A-ref-A/all": {
+      "n": 400,
+      "theory_groups": 400,
+      "difference": 0.0025,
+      "ci95": [
+        0.0,
+        0.0075
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/A-ref-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/A-ref-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/A-ref-A/unknown": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.007518796992481203,
+      "ci95": [
+        0.0,
+        0.022556390977443608
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/A-ref-A/deep_minus_shallow": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/B-A/all": {
+      "n": 400,
+      "theory_groups": 400,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/B-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/B-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/B-A/unknown": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/B-A/deep_minus_shallow": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C32-A/all": {
+      "n": 400,
+      "theory_groups": 400,
+      "difference": 0.0375,
+      "ci95": [
+        -0.010062499999999997,
+        0.09
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C32-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": -0.12030075187969924,
+      "ci95": [
+        -0.19548872180451127,
+        -0.045112781954887216
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C32-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": -0.1791044776119403,
+      "ci95": [
+        -0.3283582089552239,
+        -0.029850746268656716
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C32-A/unknown": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.3533834586466165,
+      "ci95": [
+        0.2781954887218045,
+        0.43627819548872077
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C32-A/deep_minus_shallow": {
+      "difference": 0.05880372573224105,
+      "ci95": [
+        -0.11395185725507798,
+        0.23095612164740204
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C128-A/all": {
+      "n": 400,
+      "theory_groups": 400,
+      "difference": 0.0325,
+      "ci95": [
+        -0.02,
+        0.0825
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C128-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": -0.19548872180451127,
+      "ci95": [
+        -0.2706766917293233,
+        -0.12781954887218044
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C128-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": -0.16417910447761194,
+      "ci95": [
+        -0.25410447761194027,
+        -0.07462686567164178
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C128-A/unknown": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.46616541353383456,
+      "ci95": [
+        0.38345864661654133,
+        0.5488721804511278
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C128-A/deep_minus_shallow": {
+      "difference": -0.031309617326899325,
+      "ci95": [
+        -0.13662608012568733,
+        0.0879839524183593
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C512-A/all": {
+      "n": 400,
+      "theory_groups": 400,
+      "difference": 0.19,
+      "ci95": [
+        0.1375,
+        0.2425
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C512-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": -0.09022556390977443,
+      "ci95": [
+        -0.16541353383458646,
+        -0.015037593984962405
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C512-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": 0.208955223880597,
+      "ci95": [
+        0.07462686567164178,
+        0.34328358208955223
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C512-A/unknown": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.5413533834586466,
+      "ci95": [
+        0.45112781954887216,
+        0.6240601503759399
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/C512-A/deep_minus_shallow": {
+      "difference": -0.29918078779037144,
+      "ci95": [
+        -0.4488834025361912,
+        -0.1422960386039726
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-A/all": {
+      "n": 267,
+      "theory_groups": 267,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-A/deep": {
+      "n": 133,
+      "theory_groups": 133,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-A/shallow": {
+      "n": 67,
+      "theory_groups": 67,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-A/deep_minus_shallow": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-A/oracle_nonempty": {
+      "n": 200,
+      "theory_groups": 200,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-C32/oracle_nonempty": {
+      "n": 200,
+      "theory_groups": 200,
+      "difference": 0.1,
+      "ci95": [
+        0.04,
+        0.16
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-C128/oracle_nonempty": {
+      "n": 200,
+      "theory_groups": 200,
+      "difference": 0.19,
+      "ci95": [
+        0.135,
+        0.245
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "pilot/D-C512/oracle_nonempty": {
+      "n": 200,
+      "theory_groups": 200,
+      "difference": 0.05,
+      "ci95": [
+        -0.01,
+        0.11
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C32-A/all": {
+      "n": 120,
+      "theory_groups": 120,
+      "difference": 0.08333333333333333,
+      "ci95": [
+        -0.016666666666666666,
+        0.18333333333333332
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C32-A/deep": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": -0.1,
+      "ci95": [
+        -0.225,
+        0.025
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C32-A/shallow": {
+      "n": 20,
+      "theory_groups": 20,
+      "difference": -0.15,
+      "ci95": [
+        -0.4,
+        0.1
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C32-A/unknown": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": 0.425,
+      "ci95": [
+        0.275,
+        0.575
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C32-A/deep_minus_shallow": {
+      "difference": 0.04999999999999999,
+      "ci95": [
+        -0.22562499999999996,
+        0.325
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C128-A/all": {
+      "n": 120,
+      "theory_groups": 120,
+      "difference": 0.041666666666666664,
+      "ci95": [
+        -0.05,
+        0.13333333333333333
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C128-A/deep": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": -0.125,
+      "ci95": [
+        -0.225,
+        -0.025
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C128-A/shallow": {
+      "n": 20,
+      "theory_groups": 20,
+      "difference": -0.2,
+      "ci95": [
+        -0.4,
+        -0.05
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C128-A/unknown": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": 0.425,
+      "ci95": [
+        0.275,
+        0.575
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C128-A/deep_minus_shallow": {
+      "difference": 0.07500000000000001,
+      "ci95": [
+        -0.12499999999999999,
+        0.27499999999999997
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C512-A/all": {
+      "n": 120,
+      "theory_groups": 120,
+      "difference": 0.15833333333333333,
+      "ci95": [
+        0.06666666666666667,
+        0.25
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C512-A/deep": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": -0.125,
+      "ci95": [
+        -0.25,
+        -0.025
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C512-A/shallow": {
+      "n": 20,
+      "theory_groups": 20,
+      "difference": 0.15,
+      "ci95": [
+        0.0,
+        0.3
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C512-A/unknown": {
+      "n": 40,
+      "theory_groups": 40,
+      "difference": 0.525,
+      "ci95": [
+        0.375,
+        0.675
+      ],
+      "bootstrap_replicates": 2000
+    },
+    "validation/C512-A/deep_minus_shallow": {
+      "difference": -0.275,
+      "ci95": [
+        -0.475,
+        -0.1
+      ],
+      "bootstrap_replicates": 2000
+    }
+  },
+  "validation_selection": {
+    "selected": "C32",
+    "rule": "highest validation provable depth-3/5 accuracy; lower budget on exact tie",
+    "metrics": {
+      "C32": {
+        "n": 40,
+        "accuracy": 0.4,
+        "valid_fraction": 1.0,
+        "macro_f1": 0.2519148936170213,
+        "nll": 2.0805373977064634,
+        "brier_sum": 0.8391633932070828,
+        "ece_10_equal_bins": 0.3360884547233582,
+        "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+        "latency_p50_seconds": 0.9219614819994604,
+        "latency_p95_seconds": 0.9521178266972129,
+        "examples_per_second": 1.0783692392710171,
+        "mean_reasoning_tokens": 32.0,
+        "natural_close_fraction": 0.0,
+        "forced_close_fraction": 1.0,
+        "max_peak_allocated_bytes": 1263669760
+      },
+      "C128": {
+        "n": 40,
+        "accuracy": 0.375,
+        "valid_fraction": 1.0,
+        "macro_f1": 0.2380952380952381,
+        "nll": 2.1348790690376087,
+        "brier_sum": 0.9466817505538874,
+        "ece_10_equal_bins": 0.3849470674991608,
+        "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+        "latency_p50_seconds": 3.592819404999318,
+        "latency_p95_seconds": 3.7300181964494183,
+        "examples_per_second": 0.27691091009098817,
+        "mean_reasoning_tokens": 128.0,
+        "natural_close_fraction": 0.0,
+        "forced_close_fraction": 1.0,
+        "max_peak_allocated_bytes": 1293460992
+      },
+      "C512": {
+        "n": 40,
+        "accuracy": 0.375,
+        "valid_fraction": 1.0,
+        "macro_f1": 0.20833333333333334,
+        "nll": 3.3757988139945083,
+        "brier_sum": 1.0428787318794173,
+        "ece_10_equal_bins": 0.4973830088973045,
+        "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+        "latency_p50_seconds": 14.26714926349996,
+        "latency_p95_seconds": 14.712535278299583,
+        "examples_per_second": 0.07180792464389964,
+        "mean_reasoning_tokens": 498.05,
+        "natural_close_fraction": 0.1,
+        "forced_close_fraction": 0.9,
+        "max_peak_allocated_bytes": 1332949504
+      }
+    },
+    "cohort_sha256": "5c341cddcf53fa848f75957c0e419ae3502c11919b8f9619454d82efaf5aed3d"
+  },
+  "limitations": [
+    "Single decoding seed pilot; not confirmation.",
+    "Required proof depth excludes Unknown.",
+    "Theory bootstrap does not measure decoding-seed reliability.",
+    "Model is an open Qwen proxy, not proprietary Jev.",
+    "All reasoned final readouts use full-prefix recomputation."
+  ],
+  "completion_scope": "only the listed complete suites; M1 requires baseline, validation and m1 suites"
+}

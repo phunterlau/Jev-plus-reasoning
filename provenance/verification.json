@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "imported_files": 55,
+  "r1_records": 144,
+  "individual_example_records": 12,
+  "report": {
+    "r1_small": {
+      "nonthinking": {
+        "n": 36,
+        "accuracy": 0.3333333333333333,
+        "valid_fraction": 1.0,
+        "macro_f1": 0.16666666666666666,
+        "nll": 4.3778633675131315,
+        "brier_sum": 1.303992347314613,
+        "ece_10_equal_bins": 0.6576591995027331,
+        "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+        "latency_p50_seconds": 0.4760284215080901,
+        "latency_p95_seconds": 0.6082491657507489,
+        "examples_per_second": 1.9929131247546719,
+        "mean_reasoning_tokens": 0.0,
+        "natural_close_fraction": 0.0,
+        "forced_close_fraction": 0.0,
+        "max_peak_allocated_bytes": 1224752640
+      },
+      "thinking": {
+        "n": 36,
+        "accuracy": 0.9722222222222222,
+        "valid_fraction": 1.0,
+        "macro_f1": 0.9721739130434782,
+        "nll": 0.1749076620860692,
+        "brier_sum": 0.05416058725679238,
+        "ece_10_equal_bins": 0.04165766636530559,
+        "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+        "latency_p50_seconds": 7.167555732004985,
+        "latency_p95_seconds": 11.64898439299941,
+        "examples_per_second": 0.1262232085577103,
+        "mean_reasoning_tokens": 259.05555555555554,
+        "natural_close_fraction": 1.0,
+        "forced_close_fraction": 0.0,
+        "max_peak_allocated_bytes": 1373248000
+      }
+    },
+    "examples": {
+      "counting-rasperry-v1": [
+        {
+          "mode": "nonthinking",
+          "seed": 17,
+          "prediction": 5,
+          "correct": false,
+          "p_gold": 0.041888415813446045,
+          "seconds": 0.09277129000111017,
+          "tokens": 0
+        },
+        {
+          "mode": "thinking",
+          "seed": 17,
+          "prediction": 2,
+          "correct": false,
+          "p_gold": 0.0017764241201803088,
+          "seconds": 9.128869250998832,
+          "tokens": 305
+        },
+        {
+          "mode": "thinking",
+          "seed": 18,
+          "prediction": 3,
+          "correct": true,
+          "p_gold": 0.9997438788414001,
+          "seconds": 10.386799689003965,
+          "tokens": 352
+        },
+        {
+          "mode": "thinking",
+          "seed": 19,
+          "prediction": 2,
+          "correct": false,
+          "p_gold": 0.0003624145465437323,
+          "seconds": 9.138420857008896,
+          "tokens": 320
+        }
+      ],
+      "counting-strawberry-v1": [
+        {
+          "mode": "nonthinking",
+          "seed": 17,
+          "prediction": 7,
+          "correct": false,
+          "p_gold": 0.018435902893543243,
+          "seconds": 0.06703588999516796,
+          "tokens": 0
+        },
+        {
+          "mode": "thinking",
+          "seed": 17,
+          "prediction": 2,
+          "correct": false,
+          "p_gold": 0.00010189126624027267,
+          "seconds": 7.6006148679880425,
+          "tokens": 259
+        },
+        {
+          "mode": "thinking",
+          "seed": 18,
+          "prediction": 2,
+          "correct": false,
+          "p_gold": 0.00029627178446389735,
+          "seconds": 6.333517781007686,
+          "tokens": 217
+        },
+        {
+          "mode": "thinking",
+          "seed": 19,
+          "prediction": 2,
+          "correct": false,
+          "p_gold": 0.00021509808721020818,
+          "seconds": 6.66808794499957,
+          "tokens": 229
+        }
+      ],
+      "rae-short-v1": [
+        {
+          "mode": "nonthinking",
+          "seed": 17,
+          "prediction": "No",
+          "correct": true,
+          "p_gold": 0.577251136302948,
+          "seconds": 0.06853805700666271,
+          "tokens": 0
+        },
+        {
+          "mode": "thinking",
+          "seed": 17,
+          "prediction": "No",
+          "correct": true,
+          "p_gold": 0.999953031539917,
+          "seconds": 5.719715257000644,
+          "tokens": 193
+        },
+        {
+          "mode": "thinking",
+          "seed": 18,
+          "prediction": "No",
+          "correct": true,
+          "p_gold": 0.9999481439590454,
+          "seconds": 6.084276156994747,
+          "tokens": 208
+        },
+        {
+          "mode": "thinking",
+          "seed": 19,
+          "prediction": "No",
+          "correct": true,
+          "p_gold": 0.9999810457229614,
+          "seconds": 4.770304171004682,
+          "tokens": 163
+        }
+      ]
+    },
+    "paired": {
+      "repairs": 23,
+      "regressions": 0
+    }
+  }
+}

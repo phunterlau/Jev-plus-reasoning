@@ -1,0 +1,19 @@
+{
+ "protocol":"r1-reference-mode-capacity-v1",
+ "small_model":"Qwen/Qwen3-0.6B",
+ "small_revision":"c1899de289a04d12100db370d81485cdf75e47ca",
+ "large_model":"Qwen/Qwen3-1.7B",
+ "large_revision":"70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+ "host":"lp", "dtype":"float16", "seed":17,
+ "cases":36,
+ "case_selection":"R0 construction families with variants 0/1/2 and entirely renamed entities; new canonical hashes; same cases for both models/modes",
+ "modes":["nonthinking","thinking"],
+ "thinking_cap":2048,"answer_cap":32,
+ "thinking_sampling":{"temperature":0.6,"top_p":0.95,"top_k":20,"min_p":0},
+ "answers":"Greedy 32-token native answer; typed logits at the same native answer prefix and an additional Answer-newline prefix. Fixed A=True/B=False/C=Unknown, no order sweep.",
+ "gate":"Native generated answers and cue-typed decisions must each have >=90% accuracy in every nominal-depth/label/polarity cell; >=90% of thinking cases must close naturally. Invalid/capped rows count wrong.",
+ "large_trigger":"Run 1.7B in both modes if either 0.6B mode fails its gate. Skip if both pass. Never expand beyond this one larger checkpoint.",
+ "reference_gate":"Three fixed R0 natural-label prompts, one per gold class: fresh stock loader/generate must reproduce all greedy token IDs from R0; first-step full logits agree with legacy Scorer to <=0.001. Stop and diagnose any discrepancy.",
+ "feasibility":"One model resident at a time; batch1; maximum total context 4096; stop on memory failure, no automatic quantization or model substitution.",
+ "limits":"Small diagnostic, single reasoning seed, no depth-generalization or recurrence claim; cannot attribute mode plus decoding-policy changes purely to compute. Fixed token cap is not a claim of sufficient reasoning time."
+}

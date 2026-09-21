@@ -1,0 +1,19 @@
+<|im_start|>system
+Classify the statement using the supplied evidence. You may reason inside the thinking block. Outside it, respond with only the uppercase letter of the correct option.<|im_end|>
+<|im_start|>user
+Facts:
+Rae Aspen is awake.
+Rae Aspen is round.
+Rules:
+If someone is round, then they are not blue.
+Use only the supplied facts and rules, in their stated direction. An unstated fact is not automatically false.
+Statement: Rae Aspen is blue.
+Options:
+A. True: The statement follows from the supplied facts and rules.
+B. False: The explicit negation of the statement follows from the supplied facts and rules.
+C. Unknown: Neither the statement nor its explicit negation follows from the supplied facts and rules.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

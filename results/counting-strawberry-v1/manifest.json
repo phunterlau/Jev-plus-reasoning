@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "word": "strawberry",
+  "gold": 3,
+  "cap": 2048,
+  "seeds": [
+    17,
+    18,
+    19
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "Choose the correct count. You may reason inside the thinking block. Outside it, respond with only the uppercase letter of the correct option."
+    },
+    {
+      "role": "user",
+      "content": "How many R are in the exact word \"strawberry\"? Count case-insensitively (R and r are the same letter). Do not correct the spelling.\nOptions:\nA. 0\nB. 1\nC. 2\nD. 3\nE. 4\nF. 5\nG. 6\nH. 7\nI. 8"
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+  "pid": 51431,
+  "torch": "2.6.0+cu124",
+  "transformers": "4.51.3",
+  "telemetry": [
+    "51431, 1282\n",
+    "51431, 1286\n",
+    "51431, 1348\n",
+    "51431, 1348\n",
+    "51431, 1348\n"
+  ],
+  "job": "/home/hliu/work/jev-reasoning/jobs/counting-strawberry-20260921-01",
+  "predictions_sha256": "52337b40ccf22956002d7317a20c925a471792093ec93d374bde0adb1e713ed1",
+  "timing_scope": "thinking plus one answer-cued full-prefix typed readout and boundary checks; no native answer generation; excludes loading and prompt tokenization"
+}

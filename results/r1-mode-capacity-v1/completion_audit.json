@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "records": 144,
+  "cases": 36,
+  "large_trigger_verified": true,
+  "scope": "Artifact and procedure integrity; semantic gate success is separate."
+}

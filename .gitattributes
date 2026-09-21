@@ -1,0 +1,4 @@
+# Preserve byte-exact imported evidence and extracted prompts/traces.
+archive/m1/metrics.csv -text whitespace=cr-at-eol
+docs/rae-original-prompt.txt -text whitespace=-blank-at-eof
+docs/rae-original-thinking.txt -text whitespace=-blank-at-eol

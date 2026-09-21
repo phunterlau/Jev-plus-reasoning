@@ -1,0 +1,9 @@
+# Torch is installed separately from the official cu124 index.
+transformers==4.51.3
+huggingface-hub==0.30.2
+tokenizers==0.21.1
+safetensors==0.5.3
+numpy==2.2.6
+pyarrow==19.0.1
+matplotlib==3.10.1
+pytest==8.3.5

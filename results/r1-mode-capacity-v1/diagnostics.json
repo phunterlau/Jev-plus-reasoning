@@ -1,0 +1,62 @@
+{
+  "posthoc": true,
+  "description": "Exact option-copy counts are descriptive only, not a replacement parser or revised gate.",
+  "summary": {
+    "small/nonthinking": {
+      "strict_invalid": 36,
+      "exact_option_copy_count": 34,
+      "exact_option_copy_correct_count": 12,
+      "median_seconds": 0.4760284215080901,
+      "mean_thinking_tokens": 0,
+      "max_thinking_tokens": 0,
+      "peak_allocated_bytes": 1224752640
+    },
+    "small/thinking": {
+      "strict_invalid": 32,
+      "exact_option_copy_count": 32,
+      "exact_option_copy_correct_count": 28,
+      "median_seconds": 7.167555732004985,
+      "mean_thinking_tokens": 259.05555555555554,
+      "max_thinking_tokens": 1050,
+      "peak_allocated_bytes": 1373248000
+    },
+    "small/native_paired": {
+      "repairs": 20,
+      "regressions": 0,
+      "n": 36
+    },
+    "small/cue_paired": {
+      "repairs": 23,
+      "regressions": 0,
+      "n": 36
+    },
+    "large/nonthinking": {
+      "strict_invalid": 36,
+      "exact_option_copy_count": 0,
+      "exact_option_copy_correct_count": 0,
+      "median_seconds": 1.0065658915045788,
+      "mean_thinking_tokens": 0,
+      "max_thinking_tokens": 0,
+      "peak_allocated_bytes": 3478223360
+    },
+    "large/thinking": {
+      "strict_invalid": 36,
+      "exact_option_copy_count": 31,
+      "exact_option_copy_correct_count": 31,
+      "median_seconds": 11.39683713800332,
+      "mean_thinking_tokens": 468.97222222222223,
+      "max_thinking_tokens": 2048,
+      "peak_allocated_bytes": 3721820160
+    },
+    "large/native_paired": {
+      "repairs": 22,
+      "regressions": 0,
+      "n": 36
+    },
+    "large/cue_paired": {
+      "repairs": 14,
+      "regressions": 0,
+      "n": 36
+    }
+  }
+}

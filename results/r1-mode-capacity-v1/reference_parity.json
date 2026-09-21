@@ -1,0 +1,35 @@
+[
+  {
+    "id": "r0-000",
+    "gold": "True",
+    "max_logit_difference": 0.0,
+    "token_ids_identical": true,
+    "generated_ids": [
+      2514,
+      151645
+    ],
+    "text": "True"
+  },
+  {
+    "id": "r0-012",
+    "gold": "False",
+    "max_logit_difference": 0.0,
+    "token_ids_identical": true,
+    "generated_ids": [
+      2514,
+      151645
+    ],
+    "text": "True"
+  },
+  {
+    "id": "r0-024",
+    "gold": "Unknown",
+    "max_logit_difference": 0.0,
+    "token_ids_identical": true,
+    "generated_ids": [
+      2514,
+      151645
+    ],
+    "text": "True"
+  }
+]

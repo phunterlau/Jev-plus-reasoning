@@ -1,0 +1,110 @@
+[
+  {
+    "id": "rae-short",
+    "system": "Use only the supplied facts and rules, in their stated direction. Choose Yes if the statement follows, No if its explicit negation follows, and Unknown otherwise. You may reason inside the thinking block. Outside it, respond with only the uppercase letter of the correct option.",
+    "question": "Rae is round. Anyone round is not blue. Is Rae blue?",
+    "options": [
+      {
+        "value": "Yes",
+        "description": "Yes"
+      },
+      {
+        "value": "No",
+        "description": "No"
+      },
+      {
+        "value": "Unknown",
+        "description": "Unknown"
+      }
+    ],
+    "gold": "No"
+  },
+  {
+    "id": "rasperry",
+    "system": "Choose the correct count. You may reason inside the thinking block. Outside it, respond with only the uppercase letter of the correct option.",
+    "question": "How many R are in the exact word \"rasperry\"? Count case-insensitively (R and r are the same letter). Do not correct the spelling.",
+    "options": [
+      {
+        "value": "0",
+        "description": "0"
+      },
+      {
+        "value": "1",
+        "description": "1"
+      },
+      {
+        "value": "2",
+        "description": "2"
+      },
+      {
+        "value": "3",
+        "description": "3"
+      },
+      {
+        "value": "4",
+        "description": "4"
+      },
+      {
+        "value": "5",
+        "description": "5"
+      },
+      {
+        "value": "6",
+        "description": "6"
+      },
+      {
+        "value": "7",
+        "description": "7"
+      },
+      {
+        "value": "8",
+        "description": "8"
+      }
+    ],
+    "gold": "3"
+  },
+  {
+    "id": "strawberry",
+    "system": "Choose the correct count. You may reason inside the thinking block. Outside it, respond with only the uppercase letter of the correct option.",
+    "question": "How many R are in the exact word \"strawberry\"? Count case-insensitively (R and r are the same letter). Do not correct the spelling.",
+    "options": [
+      {
+        "value": "0",
+        "description": "0"
+      },
+      {
+        "value": "1",
+        "description": "1"
+      },
+      {
+        "value": "2",
+        "description": "2"
+      },
+      {
+        "value": "3",
+        "description": "3"
+      },
+      {
+        "value": "4",
+        "description": "4"
+      },
+      {
+        "value": "5",
+        "description": "5"
+      },
+      {
+        "value": "6",
+        "description": "6"
+      },
+      {
+        "value": "7",
+        "description": "7"
+      },
+      {
+        "value": "8",
+        "description": "8"
+      }
+    ],
+    "gold": "3"
+  }
+]

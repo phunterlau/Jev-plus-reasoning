@@ -1,0 +1,282 @@
+{
+  "small/nonthinking": {
+    "n": 36,
+    "generated_accuracy": 0.0,
+    "native_accuracy": 0.3333333333333333,
+    "cue_accuracy": 0.3333333333333333,
+    "closure_fraction": 1.0,
+    "cells": {
+      "0/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "0/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "0/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "0/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      }
+    },
+    "gate_pass": false
+  },
+  "small/thinking": {
+    "n": 36,
+    "generated_accuracy": 0.1111111111111111,
+    "native_accuracy": 0.8888888888888888,
+    "cue_accuracy": 0.9722222222222222,
+    "closure_fraction": 1.0,
+    "cells": {
+      "0/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/+": {
+        "n": 3,
+        "generated_accuracy": 1.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.6666666666666666
+      },
+      "0/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.3333333333333333,
+        "cue_accuracy": 1.0
+      },
+      "1/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    "gate_pass": false
+  },
+  "large/nonthinking": {
+    "n": 36,
+    "generated_accuracy": 0.0,
+    "native_accuracy": 0.3333333333333333,
+    "cue_accuracy": 0.5833333333333334,
+    "closure_fraction": 1.0,
+    "cells": {
+      "0/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.3333333333333333
+      },
+      "0/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "0/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.3333333333333333
+      },
+      "1/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.0
+      },
+      "1/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.6666666666666666
+      },
+      "1/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.6666666666666666
+      }
+    },
+    "gate_pass": false
+  },
+  "large/thinking": {
+    "n": 36,
+    "generated_accuracy": 0.0,
+    "native_accuracy": 0.9444444444444444,
+    "cue_accuracy": 0.9722222222222222,
+    "closure_fraction": 0.9722222222222222,
+    "cells": {
+      "0/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 0.6666666666666666
+      },
+      "0/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "0/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/True/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/False/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/False/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/Unknown/+": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      },
+      "1/Unknown/-": {
+        "n": 3,
+        "generated_accuracy": 0.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    "gate_pass": false
+  }
+}

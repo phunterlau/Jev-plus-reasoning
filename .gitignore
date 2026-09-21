@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Jev-plus-reasoning local downloads and reruns
+.cache-hf/
+references/
+results/local-*/

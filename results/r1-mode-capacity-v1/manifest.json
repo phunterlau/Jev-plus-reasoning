@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "config": {
+    "protocol": "r1-reference-mode-capacity-v1",
+    "small_model": "Qwen/Qwen3-0.6B",
+    "small_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "large_model": "Qwen/Qwen3-1.7B",
+    "large_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "host": "lp",
+    "dtype": "float16",
+    "seed": 17,
+    "cases": 36,
+    "case_selection": "R0 construction families with variants 0/1/2 and entirely renamed entities; new canonical hashes; same cases for both models/modes",
+    "modes": [
+      "nonthinking",
+      "thinking"
+    ],
+    "thinking_cap": 2048,
+    "answer_cap": 32,
+    "thinking_sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0
+    },
+    "answers": "Greedy 32-token native answer; typed logits at the same native answer prefix and an additional Answer-newline prefix. Fixed A=True/B=False/C=Unknown, no order sweep.",
+    "gate": "Native generated answers and cue-typed decisions must each have >=90% accuracy in every nominal-depth/label/polarity cell; >=90% of thinking cases must close naturally. Invalid/capped rows count wrong.",
+    "large_trigger": "Run 1.7B in both modes if either 0.6B mode fails its gate. Skip if both pass. Never expand beyond this one larger checkpoint.",
+    "reference_gate": "Three fixed R0 natural-label prompts, one per gold class: fresh stock loader/generate must reproduce all greedy token IDs from R0; first-step full logits agree with legacy Scorer to <=0.001. Stop and diagnose any discrepancy.",
+    "feasibility": "One model resident at a time; batch1; maximum total context 4096; stop on memory failure, no automatic quantization or model substitution.",
+    "limits": "Small diagnostic, single reasoning seed, no depth-generalization or recurrence claim; cannot attribute mode plus decoding-policy changes purely to compute. Fixed token cap is not a claim of sufficient reasoning time."
+  },
+  "job": "/home/hliu/work/jev-reasoning/jobs/r1-mode-capacity-20260920-01",
+  "started_unix": 1789973265.6786346,
+  "source_files": {
+    "src/jev_reasoning/inference.py": "f042a04d97ba61a3f8ab5bc42f20174750428935146f5adb33be0abf28c5f65c",
+    "src/jev_reasoning/semantic_microcases.py": "0b155a290355bc0451954c0bdf24edf873dc31a4224e8929be33df4680e544b0",
+    "src/jev_reasoning/__init__.py": "babea8e8054a0b79002102d338d3efb53ef84f9db0b6b45d1157d99f1436b35b",
+    "src/jev_reasoning/metrics.py": "96f2b1c3f2b15a0378fa4c834ce3cc1a5405153ae68d74076acd37d3bdd5fd5c",
+    "src/jev_reasoning/prompts.py": "ab481311e21a1d5c8138a107474fb88b2efaeb7aef6bc58c2f6728c2d401c028",
+    "src/jev_reasoning/proofwriter.py": "3d2458327f444ad8907111f143b39c17a0c66f5d6be093bf4e7d09a801232c43",
+    "scripts/run_semantic_r0.py": "3fae873466f07f66cf7fcc0067315df479d28ebc922b0fd44515ce44a2b571b4",
+    "scripts/diagnose_m1.py": "aea5151b0d33d79cca8ca80d72dbf979d03603c70f0a27b542237b9febb64958",
+    "scripts/run_mode_capacity.py": "64c0465f0ea2adb946d5bc5052d5a04c8e6054f444cc3e433ae8933638f604be",
+    "scripts/audit_semantic_r0.py": "e5845199bdbf0203848b52533c513c6a4e83f879dfbf725d8a974ae8e82f7232",
+    "scripts/remote.py": "7d0ce15dff54e1d50d8a408a6290eadf3718361d535bddccf5143b29a30984e6",
+    "scripts/check_option_order.py": "935007ab66105e06cf9fbd1cf41fcf7f9fba76fec0a37ed15b5a302171199b74",
+    "scripts/report.py": "d858b32104ccfad2690aca027c8bfb4c66088268dbc91cd268c8fdb3024b4fd2",
+    "scripts/check_generation_eos.py": "f18018759bd9831a2daa7848f4d976701f695c4985458596c9d594bae824c1f9",
+    "scripts/fetch_model.py": "9800b1bc355d50d31093a5cdd3b45bf1fce66f08ab7e2f1e5aa2178204f65d15",
+    "scripts/verify_semif_parity.py": "5367d6bedc623fc4832b1d4c6fec8628dd2ced0ff6fdcb3e45c5933fb7c7ac4a",
+    "scripts/verify_m1.py": "30c07d6e78b3b659592139040f8616243755daa8452ba92258ae45a6ed8d43b0",
+    "scripts/wait_and_audit.py": "5d96f5db36d671dd57af651e35f12f3867dbba90d1dcbbdfa658bc24fc6ac732",
+    "scripts/present_m1.py": "489f67a847655e5ad40f4f0bc76af784ffab392c5924b080b2808f219b97c967",
+    "scripts/build_dataset.py": "a256a812059c8fe93b7f25ab8ff17eec011de96ce28f17cce6b0c7a18817072b",
+    "scripts/review_m1_design.py": "821aef144bd12c1764fa1feb561e98cc5d72ed07c3ae9d49ddba43b38e50eabf",
+    "scripts/smoke_gpu.py": "17df3b276dd0f5fc89d4ce1aab810680f5e1b514e34dfb2c1200af0e1764c800",
+    "scripts/fetch_sources.py": "0e57933c9ac6ee327de317b6eb71db410999b9fd68b567afb829fa08ec4c0752",
+    "scripts/run_eval.py": "9b7c98c2da63874b0090c9dbb81ee58b66e3bb73d686105aa02d73935557654c",
+    "experiments/semantic_interface/r0_v1.json": "487a035e4dc175a33c55d0fe813220a00e7bfc2b19a65084c415d867b59d152b",
+    "experiments/semantic_interface/r0_v2.json": "f223bef0a8939dbaff1e6e1347bcff2827a14cb421f31310c68519585d0cdb5a",
+    "experiments/mode_capacity/r1_v1.json": "82fa5aaf457a0a19fa98c33a184f43af842ad8709d1589fcb058aee0e02b5f3e",
+    "experiments/proofwriter/configs/m0_m1_frozen.json": "c2ab6272e3f99b8d1eef68c1e3ae9ac14c29e0200bcdf9dc6108e74a60f07a2e"
+  },
+  "models": {
+    "small": {
+      "repo": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+      "parameters": 596049920,
+      "load_allocated_bytes": 1200635904
+    },
+    "large": {
+      "repo": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+      "parameters": 1720574976,
+      "load_allocated_bytes": 3450210304
+    }
+  },
+  "large_decision": "triggered: at least one small mode failed",
+  "finished_unix": 1789974360.735858,
+  "records": 144,
+  "artifacts": {
+    "reference_parity.json": "ad9c6799763cad95663c9871d2d1c638c6d4e6fabf3a76c7d4a0ead7e076d511",
+    "cases.jsonl": "03a3d27ed26cc8825e58563118f1fa3725d31e879a3359087e2eb1baa06379a6",
+    "predictions.jsonl": "443bdfe4ffd9256025fc58fb53d227f8b3658ac6e91788b110f13eece1464109",
+    "summary.json": "d3e6b134ddd91a245bb84175a3603bd0e6dc8582784e0c7a0eed2e5091532fa1"
+  }
+}

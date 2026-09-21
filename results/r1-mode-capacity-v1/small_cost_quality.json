@@ -1,0 +1,41 @@
+{
+  "source_predictions_sha256": "443bdfe4ffd9256025fc58fb53d227f8b3658ac6e91788b110f13eece1464109",
+  "job": "/home/hliu/work/jev-reasoning/jobs/r1-cost-quality-20260921-01",
+  "scope": "0.6B answer-cued typed probabilities on all 36 matched cases per mode; diagnostic whole-request latency includes two readouts and native answer generation. No new inference.",
+  "metrics": {
+    "nonthinking": {
+      "n": 36,
+      "accuracy": 0.3333333333333333,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.16666666666666666,
+      "nll": 4.3778633675131315,
+      "brier_sum": 1.303992347314613,
+      "ece_10_equal_bins": 0.6576591995027331,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 0.4760284215080901,
+      "latency_p95_seconds": 0.6082491657507489,
+      "examples_per_second": 1.9929131247546719,
+      "mean_reasoning_tokens": 0.0,
+      "natural_close_fraction": 0.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1224752640
+    },
+    "thinking": {
+      "n": 36,
+      "accuracy": 0.9722222222222222,
+      "valid_fraction": 1.0,
+      "macro_f1": 0.9721739130434782,
+      "nll": 0.1749076620860692,
+      "brier_sum": 0.05416058725679238,
+      "ece_10_equal_bins": 0.04165766636530559,
+      "probability_metric_scope": "all restricted slot distributions, including invalid public readouts",
+      "latency_p50_seconds": 7.167555732004985,
+      "latency_p95_seconds": 11.64898439299941,
+      "examples_per_second": 0.1262232085577103,
+      "mean_reasoning_tokens": 259.05555555555554,
+      "natural_close_fraction": 1.0,
+      "forced_close_fraction": 0.0,
+      "max_peak_allocated_bytes": 1373248000
+    }
+  }
+}

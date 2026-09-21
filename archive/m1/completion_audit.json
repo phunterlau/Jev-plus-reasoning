@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checked": {
+    "m0-baseline-v1": {
+      "rows": 1200,
+      "valid": 1200,
+      "condition_counts": {
+        "B": 400,
+        "A-ref": 400,
+        "A": 400
+      }
+    },
+    "m1-validation-v1": {
+      "rows": 480,
+      "valid": 480,
+      "condition_counts": {
+        "C128": 120,
+        "C512": 120,
+        "A": 120,
+        "C32": 120
+      }
+    },
+    "m1-pilot-v1": {
+      "rows": 1467,
+      "valid": 1467,
+      "condition_counts": {
+        "C128": 400,
+        "C512": 400,
+        "C32": 400,
+        "D": 267
+      }
+    }
+  },
+  "oracle_noops_identical_to_A": 67,
+  "selected_budget": "C32",
+  "cohort_group_isolation": true,
+  "scope": "Exact frozen M0/M1 cohorts, raw records, probabilities/logits, traces/budgets, oracle roots/noops, artifacts and budget selection. Scientific success is separate."
+}
